@@ -1,4 +1,4 @@
-export const sections = [
+export const sectionsItems = [
     {
         name: "things_i_do",
         items: [
