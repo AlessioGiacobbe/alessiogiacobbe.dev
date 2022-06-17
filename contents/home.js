@@ -49,26 +49,5 @@ export const sections = [
                 "description" : "coming soon"
             }
         ]
-    },
-    {
-        name: "things_i_like",
-        items: [
-            {
-                "title" : "Programming",
-                "description" : ""
-            },
-            {
-                "title" : "Gaming",
-                "description" : ""
-            },
-            {
-                "title" : "Cooking",
-                "description" : ""
-            },
-            {
-                "title" : "Space",
-                "description" : ""
-            },
-        ]
     }
 ]
