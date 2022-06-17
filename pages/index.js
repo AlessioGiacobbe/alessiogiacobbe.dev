@@ -9,6 +9,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <h1 className="text-1xl ">
+        Hello world!
+      </h1>
       {
         sections.map(section => {
           return <div key={section.name} className='Section'>
