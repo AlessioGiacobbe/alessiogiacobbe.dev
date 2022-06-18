@@ -12,8 +12,8 @@ function Sections() {
                         <div className="flex flex-nowrap ">
                             {
                                 section.items.map(item => {
-                                    return <div className="inline-block px-3">
-                                        <div key={item.title} className="w-64 h-32 rounded-lg shadow-md bg-white">
+                                    return <div key={item.title} className="inline-block px-3">
+                                        <div  className="w-64 h-32 rounded-lg shadow-md bg-white">
                                             {item.title}
                                         </div>
                                     </div>
