@@ -5,7 +5,18 @@ module.exports = {
     "./components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '128': '32rem',
+      },
+      blur: {
+        "4xl": '80px',
+      },
+      colors: {
+        "cool-blue" : "#38bdf8",
+        "cool-indaco" : "#A0B6FD"
+      }
+    },
   },
   plugins: [],
 }
