@@ -16,6 +16,10 @@ module.exports = {
         "cool-blue" : "#38bdf8",
         "cool-indaco" : "#A0B6FD"
       },
+      boxShadow: {
+        "cool-white-border" : "rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset",
+        "cool-purple-border" : "#9575CDCC 0px 0px 0px 0.5px inset" 
+      },
       keyframes: {
         vibeLeft: {
           '0%, 100%': { left: '20%' },

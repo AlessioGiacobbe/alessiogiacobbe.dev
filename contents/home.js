@@ -1,6 +1,6 @@
 export const sectionsItems = [
     {
-        name: "things_i_do",
+        name: "things_i_work_with",
         items: [
             {
                 "title" : "React",
@@ -19,6 +19,10 @@ export const sectionsItems = [
     {
         name: "things_im_learning",
         items: [
+            {
+                "title" : "Next.js",
+                "description" : ""
+            },
             {
                 "title" : "Docker",
                 "description" : ""

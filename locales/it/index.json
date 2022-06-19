@@ -1,4 +1,7 @@
 {
     "hero_im" : "Ciao! sono",
-    "hero_subtitle" : "sviluppatore genovese, con la passione per lo sviluppo web fullstack"
+    "hero_subtitle" : "sviluppatore genovese, con la passione per lo sviluppo web fullstack",
+    "things_i_work_with" : "Con cosa lavoro",
+    "things_im_learning" : "Cosa sto imparando",
+    "things_i_did" : "Cosa ho fatto"
 }
