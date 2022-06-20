@@ -11,7 +11,6 @@ export default function Document() {
                 <meta name="description" content="Alessio Giacobbe is a passionate junior fullstack web developer, based in Genoa" />
                 <meta name="robots" content="all" />
                 <meta name="language" content="en" />
-                <meta name="charset" content="iso-8859-1" />
                 <meta name="copyright" content="Alessio Giacobbe" />
                 <meta name="author" content="Alessio Giacobbe" />
                 <meta name="reply-to" content="giacobbealessio@gmail.com" />
