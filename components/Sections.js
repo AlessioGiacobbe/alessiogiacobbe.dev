@@ -5,7 +5,7 @@ function Sections() {
     return <>
         <div className='mx-auto justify-center px-8 left-1/2  transform px-8 max-w-7xl'>
             {
-                sectionsItems.map(section => <Section key={section.name} name={section.name} items={section.items} />)
+                sectionsItems.map(section => <Section section={section} key={section.name} />)
             }
         </div>
     </>

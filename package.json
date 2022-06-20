@@ -11,6 +11,8 @@
     "pre-commit": "next lint"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^2.2.1",
+    "@splinetool/runtime": "^0.9.69",
     "framer-motion": "^6.3.11",
     "next": "12.1.6",
     "next-translate": "^1.4.0",

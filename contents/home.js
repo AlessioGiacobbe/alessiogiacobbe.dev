@@ -1,6 +1,7 @@
 export const sectionsItems = [
     {
         name: "things_i_work_with",
+        splineLink: "https://prod.spline.design/JopwieTGs-1-lUdP/scene.splinecode",
         items: [
             {
                 "title" : "React",
@@ -18,6 +19,7 @@ export const sectionsItems = [
     },
     {
         name: "things_im_learning",
+        splineLink: "",
         items: [
             {
                 "title" : "Next.js",
@@ -35,6 +37,7 @@ export const sectionsItems = [
     },
     {
         name: "things_i_did",
+        splineLink: "",
         items: [
             {
                 "title" : "betamicroprocessor",
@@ -56,6 +59,7 @@ export const sectionsItems = [
     },
     {
         name: "where_i_have_worked",
+        splineLink: "",
         items: [
             {
                 "title" : "finsa",
