@@ -53,5 +53,22 @@ export const sectionsItems = [
                 "description" : "coming soon"
             }
         ]
+    },
+    {
+        name: "where_i_have_worked",
+        items: [
+            {
+                "title" : "finsa",
+                "description" : ""
+            },
+            {
+                "title" : "gaslini",
+                "description" : ""
+            },
+            {
+                "title" : "freelance",
+                "description" : ""
+            }
+        ]
     }
 ]

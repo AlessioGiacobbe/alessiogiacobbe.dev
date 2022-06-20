@@ -11,7 +11,7 @@ function Hero() {
             <div className="absolute blur-4xl h-4/5 w-2/5 bg-[#6e45e2] rounded-full right-1/2 transform -translate-x-1/6 -translate-y-1/3 animate-[vibeLeft_20s_ease-in-out_infinite]"></div>
             <div className="absolute blur-4xl h-96 w-2/5 bg-[#764ba2] rounded-full  left-1/2 transform -translate-x-1/2 -translate-y-1/3 "></div>
             <div className="absolute blur-4xl h-4/5 w-2/5 bg-[#3f98cc] rounded-full left-1/2 transform -translate-x-1/6 -translate-y-1/3 animate-[vibeRight_20s_ease-in-out_infinite]"></div>
-            <div className='left-1/2  transform -translate-x-1/2 absolute h-128 max-w-6xl w-full text-white flex flex-col justify-center px-8 transition duration-300 ease-in-out'>
+            <div className='left-1/2  transform -translate-x-1/2 absolute h-128 max-w-7xl w-full text-white flex flex-col justify-center px-8 transition duration-300 ease-in-out'>
                 <div className='font-bold text-3xl'>
                     <motion.ul
                         variants={containerAnimations}
