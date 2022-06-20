@@ -6,7 +6,6 @@ function SplineItem({ splineLink, splineItemName, hovered }) {
     const spline = useRef();
 
     function onLoad(splineApp) {
-        console.log("loaded")
         spline.current = splineApp;
     }
 
