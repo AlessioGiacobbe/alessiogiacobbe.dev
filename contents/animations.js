@@ -4,7 +4,7 @@ export const container = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 1,
+            delay: 0.2,
             when: "beforeChildren",
             staggerChildren: 0.1
         }
