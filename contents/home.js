@@ -23,8 +23,8 @@ export const sectionsItems = [
     {
         name: "things_im_learning",
         spline: {
-            link: "https://prod.spline.design/xjYWyObGmmXZqlkb/scene.splinecode",
-            itemName: ""
+            link: "https://prod.spline.design/n2rMlcDURnYYY0z6/scene.splinecode",
+            itemName: "beaker"
         },
         items: [
             {

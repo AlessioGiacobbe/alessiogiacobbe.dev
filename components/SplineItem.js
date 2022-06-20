@@ -1,6 +1,6 @@
-import useTranslation from "next-translate/useTranslation";
-import Spline from "@splinetool/react-spline";
-import { useEffect, useRef, useState } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
+
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 function SplineItem({ splineLink, splineItemName, hovered }) {
     const spline = useRef();
@@ -11,7 +11,7 @@ function SplineItem({ splineLink, splineItemName, hovered }) {
     }
 
     useEffect(() => {
-        if(spline.current){
+        if (spline.current) {
             hovered ? triggerAnimation() : resetAnimation()
         }
     }, [hovered]);
@@ -24,7 +24,9 @@ function SplineItem({ splineLink, splineItemName, hovered }) {
         spline.current.emitEvent('mouseUp', splineItemName);
     }
 
-    return <Spline onLoad={onLoad} className="!inline h-16 w-32" scene={splineLink} />
+    return <Suspense fallback={<div></div>}>
+            <Spline onLoad={onLoad} className="!inline h-16 w-32" scene={splineLink} />
+    </Suspense>
 }
 
 export default SplineItem
