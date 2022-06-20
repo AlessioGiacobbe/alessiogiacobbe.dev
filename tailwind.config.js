@@ -12,6 +12,10 @@ module.exports = {
       blur: {
         "4xl": '80px',
       },
+      margin: {
+        '16': '3.5rem',
+        '20': '4.5rem',
+      },
       colors: {
         "cool-blue" : "#38bdf8",
         "cool-indaco" : "#A0B6FD"
