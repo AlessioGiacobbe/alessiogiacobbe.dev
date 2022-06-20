@@ -1,7 +1,10 @@
 export const sectionsItems = [
     {
         name: "things_i_work_with",
-        splineLink: "https://prod.spline.design/JopwieTGs-1-lUdP/scene.splinecode",
+        spline: {
+            link: "https://prod.spline.design/JopwieTGs-1-lUdP/scene.splinecode",
+            itemName: "briefcase"
+        },
         items: [
             {
                 "title" : "React",
@@ -19,7 +22,10 @@ export const sectionsItems = [
     },
     {
         name: "things_im_learning",
-        splineLink: "",
+        spline: {
+            link: "https://prod.spline.design/xjYWyObGmmXZqlkb/scene.splinecode",
+            itemName: ""
+        },
         items: [
             {
                 "title" : "Next.js",
@@ -37,7 +43,10 @@ export const sectionsItems = [
     },
     {
         name: "things_i_did",
-        splineLink: "",
+        spline: {
+            link: "",
+            itemName: ""
+        },
         items: [
             {
                 "title" : "betamicroprocessor",
@@ -59,7 +68,10 @@ export const sectionsItems = [
     },
     {
         name: "where_i_have_worked",
-        splineLink: "",
+        spline: {
+            link: "",
+            itemName: ""
+        },
         items: [
             {
                 "title" : "finsa",
