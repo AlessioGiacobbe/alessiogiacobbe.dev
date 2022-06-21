@@ -44,8 +44,8 @@ export const sectionsItems = [
     {
         name: "things_i_did",
         spline: {
-            link: "",
-            itemName: ""
+            link: "https://prod.spline.design/CavLkfy04ne77ekg/scene.splinecode",
+            itemName: "Pen holder"
         },
         items: [
             {
@@ -69,8 +69,8 @@ export const sectionsItems = [
     {
         name: "where_i_have_worked",
         spline: {
-            link: "",
-            itemName: ""
+            link: "https://prod.spline.design/9HZ5jsPdPBI2hs04/scene.splinecode",
+            itemName: "funnel"
         },
         items: [
             {

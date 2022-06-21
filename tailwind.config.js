@@ -7,6 +7,8 @@ module.exports = {
   theme: {
     extend: {
       height: {
+        '100': '26rem',
+        '110': '28rem',
         '128': '32rem',
       },
       blur: {
