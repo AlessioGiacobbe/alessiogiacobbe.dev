@@ -1,8 +1,14 @@
 const nextTranslate = require('next-translate')
+const withPlugins = require('next-compose-plugins');
 
-/** @type {import('next').NextConfig} **/
-const nextConfig = nextTranslate({
+module.exports = nextTranslate({
   reactStrictMode: true,
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      use: ["@svgr/webpack"]
+    });
+    
+    return config;
+  }
 })
-
-module.exports = nextConfig

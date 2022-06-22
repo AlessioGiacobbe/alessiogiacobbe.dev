@@ -5,5 +5,8 @@
     "things_i_work_with" : "Con cosa lavoro",
     "things_im_learning" : "Cosa sto imparando",
     "things_i_did" : "Cosa ho fatto",
-    "where_i_have_worked" : "Dove ho lavorato"
+    "where_i_have_worked" : "Dove ho lavorato",
+    "footer_developed_by" : "Disegnato e sviluppato da Alessio Giacobbe",
+    "built_with": "Realizzato con",
+    "hosted_on": "hostato su"
 }
