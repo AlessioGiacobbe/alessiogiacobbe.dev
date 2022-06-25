@@ -1,8 +1,9 @@
 import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
 import SplineItem from "./SplineItem";
-import { item as itemAnimations } from '../contents/animations';
+import TopicCard from "./TopicCard";
 import { motion } from "framer-motion";
+import { container as containerAnimations, item as itemAnimations } from '../contents/animations';
 
 function Section({ section, index }) {
     const { t } = useTranslation('index');
@@ -20,15 +21,16 @@ function Section({ section, index }) {
             </div>
             <div className="flex  overflow-x-hidden hide-scroll-bar col-span-2">
                 <div className="flex flex-nowrap ">
-                    {
-                        section.items.map(item => {
-                            return <div key={item.title} className="inline-block px-3">
-                                <div className="w-64 h-32 rounded-lg shadow-md bg-white">
-                                    {item.title}
-                                </div>
-                            </div>
-                        })
-                    }
+                    <motion.ul
+                        variants={containerAnimations}
+                        initial="hidden"
+                        animate="visible">
+                        {
+                            section.items.map(item => {
+                                return <TopicCard topic={item} />
+                            })
+                        }
+                    </motion.ul>
                 </div>
             </div>
         </div>

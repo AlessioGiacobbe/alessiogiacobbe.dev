@@ -39,3 +39,16 @@ export const item = {
         transition: { type: 'spring' }
     }
 };
+
+export const itemOpacity = {
+    initial:{ opacity: 0 },
+    hidden: { opacity: 0 },
+    exit:   { opacity: 0 },
+    animate: {
+        opacity: 1,
+        transition: { type: 'spring' }},
+    visible: {
+        opacity: 1,
+        transition: { type: 'spring' }
+    }
+};

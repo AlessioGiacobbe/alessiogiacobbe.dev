@@ -7,10 +7,17 @@ function Footer() {
 
     return <footer className=" mx-auto border-t border-slate-700  transform text-center max-w-7xl lg:text-left  text-slate-500 mt-9">
         <div className="flex justify-center items-center lg:justify-between p-6 ">
-            <div className="mr-12 hidden lg:block">
+            <div className="w-96 hidden lg:block">
                 <span>{t('footer_developed_by')}</span>
             </div>
-            <div className="flex justify-center">
+            <div className="hidden lg:block cursor-pointer">
+                <a href="https://github.com/AlessioGiacobbe/alessiogiacobbe.dev">
+                    <div className='relative z-0 shadow-cool-white-border inline-block bg-[#FFFFFF10] text-[#FFFFFFCC] transition-all hover:shadow-cool-white-border-and-shadow  font-bold py-2 px-3 rounded-xl'>
+                        <p className="text-sm">Star me on Github!</p>
+                    </div>
+                </a>
+            </div>
+            <div className="w-96 flex justify-end">
                 <span>{t('built_with')}
                     <a href="https://nextjs.org/"><NextjsIcon className="inline-block mx-2 align-baseline" /></a>
                     {t('hosted_on')}

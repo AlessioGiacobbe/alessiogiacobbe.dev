@@ -10,7 +10,6 @@ function Sections() {
                 variants={containerAnimations}
                 initial="hidden"
                 animate="visible">
-
                 {
                     sectionsItems.map((section, index) => <Section section={section} index={index} key={section.name} />)
                 }
