@@ -27,7 +27,7 @@ function Section({ section, index }) {
                         animate="visible">
                         {
                             section.items.map(item => {
-                                return <TopicCard topic={item} />
+                                return <TopicCard key={item.name} topic={item} />
                             })
                         }
                     </motion.ul>
