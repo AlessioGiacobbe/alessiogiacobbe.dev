@@ -22,13 +22,25 @@ module.exports = {
         '4xl': '1.875rem'
       },
       colors: {
-        "cool-blue" : "#38bdf8",
-        "cool-indaco" : "#A0B6FD"
+        "cool-blue": "#38bdf8",
+        "cool-indaco": "#A0B6FD",
+        "accented-background": "#301e43"
       },
       boxShadow: {
-        "cool-white-border" : "rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset",
-        "cool-purple-border" : "#9575CDCC 0px 0px 0px 0.5px inset",
-        "cool-white-border-and-shadow" : "rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset, #9575CD40 0px 0px 20px",
+        "cool-white-border": "rgb(255 255 255 / 10%) 0px 0px 0px 1px inset",
+        "cool-purple-border": "#9575CDCC 0px 0px 0px 0.5px inset",
+        "cool-accented-border": "#301e43 0px 0px 0px 0.5px inset",
+        "cool-white-border-and-shadow": "rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset, #9575CD40 0px 0px 20px",
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
+      },
+      scale: {
+        '60': '.6',
       },
       keyframes: {
         vibeLeft: {

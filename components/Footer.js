@@ -12,7 +12,7 @@ function Footer() {
             </div>
             <div className="hidden lg:block cursor-pointer">
                 <a href="https://github.com/AlessioGiacobbe/alessiogiacobbe.dev">
-                    <div className='relative z-0 shadow-cool-white-border inline-block bg-[#FFFFFF10] text-[#FFFFFFCC] transition-all hover:shadow-cool-white-border-and-shadow  font-bold py-2 px-3 rounded-xl'>
+                    <div className='relative z-0 shadow-cool-white-border inline-block bg-[#FFFFFF05] hover:bg-[#FFFFFF10] text-[#FFFFFFCC] transition-all hover:shadow-cool-white-border-and-shadow  font-bold py-2 px-3 rounded-xl'>
                         <p className="text-sm">Star me on Github!</p>
                     </div>
                 </a>

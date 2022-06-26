@@ -19,7 +19,7 @@ function Section({ section, index }) {
                     </div>
                 </div>
             </div>
-            <div className="flex  overflow-x-hidden hide-scroll-bar col-span-2">
+            <div className="flex  overflow-hidden hide-scroll-bar col-span-2">
                 <div className="flex flex-nowrap ">
                     <motion.ul
                         variants={containerAnimations}
