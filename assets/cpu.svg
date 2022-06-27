@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cpu-svgrepo-com">
+            <polygon id="Path" points="0 0 32 0 32 32 0 32"></polygon>
+            <path d="M18.2,26.3 L12.8,26.3 L12.8,29 L10.1,29 L10.1,26.3 L6.05,26.3 C5.30441559,26.3 4.7,25.6955844 4.7,24.95 L4.7,20.9 L2,20.9 L2,18.2 L4.7,18.2 L4.7,12.8 L2,12.8 L2,10.1 L4.7,10.1 L4.7,6.05 C4.7,5.30441559 5.30441559,4.7 6.05,4.7 L10.1,4.7 L10.1,2 L12.8,2 L12.8,4.7 L18.2,4.7 L18.2,2 L20.9,2 L20.9,4.7 L24.95,4.7 C25.6955844,4.7 26.3,5.30441559 26.3,6.05 L26.3,10.1 L29,10.1 L29,12.8 L26.3,12.8 L26.3,18.2 L29,18.2 L29,20.9 L26.3,20.9 L26.3,24.95 C26.3,25.6955844 25.6955844,26.3 24.95,26.3 L20.9,26.3 L20.9,29 L18.2,29 L18.2,26.3 Z M8.75,8.75 L8.75,14.15 L14.15,14.15 L14.15,8.75 L8.75,8.75 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

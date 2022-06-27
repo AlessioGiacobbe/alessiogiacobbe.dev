@@ -8,14 +8,17 @@ export const sectionsItems = [
         items: [
             {
                 "title" : "React",
+                "iconName" : "react",
                 "description" : ""
             },
             {
                 "title" : "Laravel",
+                "iconName" : "laravel",
                 "description" : ""
             },
             {
                 "title" : "Symfony",
+                "iconName" : "symfony",
                 "description" : ""
             }
         ]
@@ -29,14 +32,17 @@ export const sectionsItems = [
         items: [
             {
                 "title" : "Next.js",
+                "iconName" : "next",
                 "description" : ""
             },
             {
                 "title" : "Docker",
+                "iconName" : "docker",
                 "description" : ""
             },
             {
                 "title" : "Kubernetes",
+                "iconName" : "kubernetes",
                 "description" : ""
             }
         ]
@@ -50,6 +56,7 @@ export const sectionsItems = [
         items: [
             {
                 "title" : "betamicroprocessor",
+                "iconName" : "cpu",
                 "description" : ""
             },
             {

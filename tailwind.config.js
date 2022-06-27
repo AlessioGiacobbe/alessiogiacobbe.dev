@@ -41,6 +41,7 @@ module.exports = {
       },
       scale: {
         '60': '.6',
+        '70': '.7'
       },
       keyframes: {
         vibeLeft: {
