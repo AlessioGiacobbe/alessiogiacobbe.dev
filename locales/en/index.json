@@ -8,5 +8,14 @@
     "where_i_have_worked" : "Where i have worked",
     "footer_developed_by" : "Designed and devloped by Alessio Giacobbe",
     "built_with": "Built with",
-    "hosted_on": "hosted on"
+    "hosted_on": "hosted on",
+    "finsa": "Finsa S.p.A",
+    "gaslini": "Istituto Giannina Gaslini",
+    "freelance": "Freelancer",
+    "isaac_leaderboard": "Binding of Isaac Leaderboard",
+    "isaac_leaderboard_descr": "A cute node-backed online leaderboard to keep my and my friend's scores",
+    "betamicroprocessor": "β microprocessor",
+    "betamicroprocessor_descr" : "A custom educative microprocessor built with Logisim based on the Zilog Z80 architecture",
+    "this_website": "This website",
+    "this_website_descr": "Nothing special, trying out Tailwind and Spline for the first time was a lot of fun nonetheless"
 }

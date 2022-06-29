@@ -9,17 +9,17 @@ export const sectionsItems = [
             {
                 "title" : "React",
                 "iconName" : "react",
-                "description" : ""
+                "since" : "06/01/2020",
             },
             {
                 "title" : "Laravel",
                 "iconName" : "laravel",
-                "description" : ""
+                "since" : "09/01/2020",
             },
             {
                 "title" : "Symfony",
                 "iconName" : "symfony",
-                "description" : ""
+                "since" : "01/01/2022",
             }
         ]
     },
@@ -33,17 +33,17 @@ export const sectionsItems = [
             {
                 "title" : "Next.js",
                 "iconName" : "next",
-                "description" : ""
+                "since" : "04/01/2022",
             },
             {
                 "title" : "Docker",
                 "iconName" : "docker",
-                "description" : ""
+                "since" : "01/01/2022",
             },
             {
                 "title" : "Kubernetes",
                 "iconName" : "kubernetes",
-                "description" : ""
+                "since" : "01/01/2022",
             }
         ]
     },
@@ -55,22 +55,17 @@ export const sectionsItems = [
         },
         items: [
             {
-                "title" : "betamicroprocessor",
-                "iconName" : "cpu",
-                "description" : ""
+                "title" : "this_website",
+                "description" : "this_website_descr"
             },
             {
                 "title" : "isaac_leaderboard",
-                "description" : ""
+                "description" : "isaac_leaderboard_descr"
             },
             {
-                "title" : "this_website",
-                "description" : ""
-            },
-            {
-                "title" : "more",
-                "description" : "coming soon"
-            }
+                "title" : "betamicroprocessor",
+                "description" : "betamicroprocessor_descr"
+            }  
         ]
     },
     {
@@ -82,15 +77,15 @@ export const sectionsItems = [
         items: [
             {
                 "title" : "finsa",
-                "description" : ""
+                "since" : "01/01/2022",
             },
             {
                 "title" : "gaslini",
-                "description" : ""
+                "end" : "01/01/2022",
+                "since" : "09/01/2020",
             },
             {
                 "title" : "freelance",
-                "description" : ""
             }
         ]
     }
