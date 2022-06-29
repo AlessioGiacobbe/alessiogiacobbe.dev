@@ -18,6 +18,11 @@ module.exports = {
         '16': '3.5rem',
         '20': '4.5rem',
       },
+      maxWidth: {
+        '1/4': '25%',
+        '1/2': '300px',
+        '3/4': '75%',
+      },
       borderRadius: {
         '4xl': '1.875rem'
       },

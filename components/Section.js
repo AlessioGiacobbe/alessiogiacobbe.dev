@@ -27,7 +27,7 @@ function Section({ section, index }) {
                         animate="visible">
                         {
                             section.items.map(item => {
-                                return <TopicCard key={item.name} topic={item} />
+                                return <TopicCard key={item.name} topic={item} size={section.customSize} />
                             })
                         }
                     </motion.ul>
