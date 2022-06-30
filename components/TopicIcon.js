@@ -3,7 +3,7 @@ import KubernetesIcon from "../assets/kubernetes.svg"
 import CpuIcon from "../assets/cpu.svg"
 import DockerIcon from "../assets/docker.svg"
 import LaravelIcon from "../assets/laravel.svg"
-import SymfonyIcon from "../assets/Symfony.svg"
+import SymfonyIcon from "../assets/symfony.svg"
 import NextIcon from "../assets/nextjs.svg"
 import IsaacIcon from "../assets/isaac.svg"
 import { GitHub, ArrowUpRight, Mail, Twitter, FileText } from 'react-feather';
