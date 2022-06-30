@@ -95,11 +95,13 @@ export const sectionsItems = [
             {
                 "title" : "finsa",
                 "since" : "01/01/2022",
+                "role" : "Front end"
             },
             {
                 "title" : "gaslini",
                 "end" : "01/01/2022",
                 "since" : "09/01/2020",
+                "role" : "Fullstack"
             }
         ]
     }
