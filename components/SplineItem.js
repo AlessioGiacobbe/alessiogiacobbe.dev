@@ -7,7 +7,6 @@ function SplineItem({ splineLink, splineItemName, hovered }) {
 
     function onLoad(splineApp) {
         spline.current = splineApp;
-        console.log(splineApp)
     }
 
     useEffect(() => {
