@@ -11,8 +11,8 @@ function TopicCard({ topic, size = "w-64" }) {
     const topicDuration = moment.duration(topicEnd.diff(moment(topic.since ?? null)));
 
     return <>
-        <motion.li className="inline-block px-3 pt-4 h-full" key={topic.title} variants={itemOpacity}>
-            <div className={`${size} flow-root h-full bg-gradient-to-br hover:bg-gradient-to-r  bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500  from-[#764ba230] to-[#3f98cc20]  flex overflow-hidden shadow-cool-white-border px-5 py-4  text-white font-semibold  rounded-xl`}>
+        <motion.li className="inline-block px-3 pt-4 max-h-72" key={topic.title} variants={itemOpacity}>
+            <div className={`${size} flow-root  max-h-72 bg-gradient-to-br hover:bg-gradient-to-r  bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500  from-[#764ba230] to-[#3f98cc20]  flex overflow-hidden shadow-cool-white-border px-5 py-4  text-white font-semibold  rounded-xl`}>
                 <div className="float-left">
                     <div className="flow-root ">
                         <p className={`float-left text-xl ${topic.links && "max-w-3/4"}`}>

@@ -6,7 +6,7 @@ import LaravelIcon from "../assets/laravel.svg"
 import SymfonyIcon from "../assets/Symfony.svg"
 import NextIcon from "../assets/nextjs.svg"
 import IsaacIcon from "../assets/isaac.svg"
-import { GitHub, ArrowUpRight } from 'react-feather';
+import { GitHub, ArrowUpRight, Mail, Twitter, FileText } from 'react-feather';
 
 const icons = {
     react: ReactIcon,
@@ -18,7 +18,10 @@ const icons = {
     symfony: SymfonyIcon,
     isaac: IsaacIcon,
     github: GitHub,
-    arrowUpRight: ArrowUpRight
+    arrowUpRight: ArrowUpRight,
+    mail: Mail,
+    twitter: Twitter,
+    document: FileText
 };
 
 function TopicIcon({ iconName = "react", customStyles = "scale-60" }) {
