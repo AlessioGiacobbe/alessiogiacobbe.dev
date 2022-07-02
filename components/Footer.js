@@ -5,7 +5,7 @@ import VercelIcon from "../assets/vercel.svg";
 function Footer() {
     const { t } = useTranslation('index');
 
-    return <footer className=" mx-auto border-t border-slate-700  transform text-center max-w-7xl lg:text-left  text-slate-500 mt-9">
+    return <footer className=" bg-[#0f172acc] backdrop-blur-md mx-auto border-t border-slate-700  transform text-center max-w-7xl lg:text-left  text-slate-500">
         <div className="flex justify-center items-center lg:justify-between p-6 ">
             <div className="w-96 hidden lg:block">
                 <span>{t('footer_developed_by')}</span>

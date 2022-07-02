@@ -57,7 +57,13 @@ export const sectionsItems = [
         items: [
             {
                 "title" : "this_website",
-                "description" : "this_website_descr"
+                "description" : "this_website_descr",
+                "links" : [
+                    {
+                        "icon" : "github",
+                        "link" : "https://github.com/AlessioGiacobbe/alessiogiacobbe.dev"
+                    }
+                ]
             },
             {
                 "title" : "isaac_leaderboard",
@@ -87,6 +93,7 @@ export const sectionsItems = [
     },
     {
         name: "where_i_have_worked",
+        customSize: "w-72",
         spline: {
             link: "https://prod.spline.design/9HZ5jsPdPBI2hs04/scene.splinecode",
             itemName: "funnel"
