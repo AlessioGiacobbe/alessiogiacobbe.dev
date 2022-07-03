@@ -19,20 +19,17 @@ function Section({ section, index }) {
                     </div>
                 </div>
             </div>
-            <div className="flex  overflow-hidden hide-scroll-bar col-span-2">
-                <div className="flex flex-nowrap ">
-                    <motion.ul
-                        variants={containerAnimations}
-                        initial="hidden"
-                        animate="visible">
-                        {
-                            section.items.map(item => {
-                                return <TopicCard key={item.name} topic={item} size={section.customSize} />
-                            })
-                        }
-                    </motion.ul>
-                </div>
-            </div>
+            <motion.ul
+                variants={containerAnimations}
+                initial="hidden"
+                className="flex flex-nowrap overflow-x-scroll pb-4 overflow-hidden col-span-2"
+                animate="visible">
+                {
+                    section.items.map(item => {
+                        return <TopicCard key={item.name} topic={item} size={section.customSize} />
+                    })
+                }
+            </motion.ul>
         </div>
     </motion.li>
 }
