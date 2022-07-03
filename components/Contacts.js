@@ -1,18 +1,15 @@
 import Spline from "@splinetool/react-spline";
 import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
+import SplineItem from "./SplineItem";
 import TopicIcon from "./TopicIcon";
 
 function Contacts() {
     const { t } = useTranslation('index');
-    const [isMobile, setIsMobile] = useState(() => {
-        if (typeof window === 'undefined') return false
-        return window.innerWidth < 576
-    })
+    const [isHovered, setIsHovered] = useState(false);
 
-
-    return <div className="mx-auto items-center flex transform h-80 text-white  text-center max-w-7xl mt-24">
-        <div className="m-auto w-11/12 sm:hidden">
+    return <div className="mx-auto items-center flex transform h-20 sm:h-80 text-white  text-center max-w-7xl mt-24">
+        <div className="mx-auto w-11/12 sm:hidden">
             <h1 className="text-4xl font-extrabold mb-2">{t('contacts_get_in_touch')}</h1>
             <div className="flex justify-between w-2/3 mx-auto mt-9">
                 <div>
@@ -40,8 +37,8 @@ function Contacts() {
                 </div>
             </div>
         </div>
-        <div className="mx-auto hidden md:block">
-            <Spline scene="https://prod.spline.design/hFvwmdrlIakDYHon/scene.splinecode" />
+        <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="mx-auto hidden md:block">
+            <SplineItem splineLink="https://prod.spline.design/hFvwmdrlIakDYHon/scene.splinecode" splineItemName="Console" hovered={isHovered} className="" />
         </div>
     </div>
 }

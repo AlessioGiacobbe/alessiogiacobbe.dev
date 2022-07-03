@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useRef } from "react";
 
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
-function SplineItem({ splineLink, splineItemName, hovered }) {
+function SplineItem({ splineLink, splineItemName, hovered, customClasses = "!inline h-16 w-32" }) {
     const spline = useRef();
 
     function onLoad(splineApp) {
@@ -22,7 +22,7 @@ function SplineItem({ splineLink, splineItemName, hovered }) {
     }, [hovered]);
 
     return <Suspense fallback={<div></div>}>
-            <Spline onLoad={onLoad} className="!inline h-16 w-32" scene={splineLink} />
+            <Spline onLoad={onLoad} className={customClasses} scene={splineLink} />
     </Suspense>
 }
 
