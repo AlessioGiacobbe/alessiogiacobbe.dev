@@ -4,9 +4,9 @@ export const container = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 0.2,
+            delay: 0.1,
             when: "beforeChildren",
-            staggerChildren: 0.1
+            staggerChildren: 0.05
         }
     }
 };
@@ -18,9 +18,9 @@ export const containerform = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 0.2,
+            delay: 0.1,
             when: "beforeChildren",
-            staggerChildren: 0.1
+            staggerChildren: 0.05
         }
     }
 };
