@@ -18,5 +18,11 @@
     "betamicroprocessor_descr" : "A custom educative microprocessor built with Logisim based on the Zilog Z80 architecture",
     "this_website": "This website",
     "this_website_descr": "Nothing special, trying out Tailwind and Spline for the first time was a lot of fun nonetheless",
-    "contacts_get_in_touch": "Get in touch!"
+    "contacts_get_in_touch": "Get in touch!",
+    "next-js": "Next.js",
+    "symfony": "Symfony",
+    "laravel": "Laravel",
+    "react": "React",
+    "kubernetes": "Kubernetes",
+    "docker": "Docker"
 }

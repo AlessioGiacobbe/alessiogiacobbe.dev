@@ -25,8 +25,8 @@ function Section({ section, index }) {
                 className="flex flex-nowrap overflow-x-scroll pb-4 overflow-hidden col-span-2"
                 animate="visible">
                 {
-                    section.items.map(item => {
-                        return <TopicCard key={item.name} topic={item} size={section.customSize} />
+                    section.items.map((item, index) => {
+                        return <TopicCard key={index} topic={item} size={section.customSize} />
                     })
                 }
             </motion.ul>

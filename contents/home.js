@@ -7,17 +7,17 @@ export const sectionsItems = [
         },
         items: [
             {
-                "title" : "React",
+                "title" : "react",
                 "iconName" : "react",
                 "since" : "06/01/2020",
             },
             {
-                "title" : "Laravel",
+                "title" : "laravel",
                 "iconName" : "laravel",
                 "since" : "09/01/2020",
             },
             {
-                "title" : "Symfony",
+                "title" : "symfony",
                 "iconName" : "symfony",
                 "since" : "01/01/2022",
             }
@@ -31,17 +31,17 @@ export const sectionsItems = [
         },
         items: [
             {
-                "title" : "Next.js",
+                "title" : "next-js",
                 "iconName" : "next",
                 "since" : "04/01/2022",
             },
             {
-                "title" : "Docker",
+                "title" : "docker",
                 "iconName" : "docker",
                 "since" : "01/01/2022",
             },
             {
-                "title" : "Kubernetes",
+                "title" : "kubernetes",
                 "iconName" : "kubernetes",
                 "since" : "01/01/2022",
             }

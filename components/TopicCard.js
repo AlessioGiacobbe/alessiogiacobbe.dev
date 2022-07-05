@@ -7,8 +7,8 @@ import useTranslation from "next-translate/useTranslation";
 
 function TopicCard({ topic, size = "w-64" }) {
     const { t } = useTranslation('index');
-    const topicEnd = topic.end ? moment(topic.end) : moment()
-    const topicDuration = moment.duration(topicEnd.diff(moment(topic.since ?? null)));
+    const topicEnd = topic.end ? moment(topic.end, "DD/MM/YYYY") : moment()
+    const topicDuration = moment.duration(topicEnd.diff(moment(topic.since ?? null, "DD/MM/YYYY")));
 
     return <>
         <motion.li className="inline-block px-3 pt-4 max-h-72" key={topic.title} variants={itemOpacity}>
