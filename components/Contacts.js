@@ -1,12 +1,14 @@
 import Spline from "@splinetool/react-spline";
 import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import SplineItem from "./SplineItem";
 import TopicIcon from "./TopicIcon";
 
 function Contacts() {
     const { t } = useTranslation('index');
     const [isHovered, setIsHovered] = useState(false);
+    const { ref, inView, entry } = useInView({triggerOnce: true});
 
     return <div className="mx-auto items-center flex transform h-20 sm:h-80 text-white  text-center max-w-7xl mt-24">
         <div className="mx-auto w-11/12 sm:hidden">
@@ -37,8 +39,10 @@ function Contacts() {
                 </div>
             </div>
         </div>
-        <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="mx-auto hidden md:block">
-            <SplineItem splineLink="https://prod.spline.design/hFvwmdrlIakDYHon/scene.splinecode" splineItemName="Console" hovered={isHovered} className="" />
+        <div ref={ref} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="mx-auto hidden md:block">
+            {
+                inView && <SplineItem splineLink="https://prod.spline.design/hFvwmdrlIakDYHon/scene.splinecode" splineItemName="Console" hovered={isHovered} className="" />
+            }
         </div>
     </div>
 }
