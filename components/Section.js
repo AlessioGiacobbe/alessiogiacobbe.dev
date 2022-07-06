@@ -22,7 +22,7 @@ function Section({ section, index }) {
             <motion.ul
                 variants={containerAnimations}
                 initial="hidden"
-                className="flex flex-nowrap overflow-x-scroll pb-4 overflow-hidden col-span-2"
+                className="flex flex-nowrap overflow-x-auto pb-4 overflow-hidden col-span-2"
                 animate="visible">
                 {
                     section.items.map((item, index) => {
