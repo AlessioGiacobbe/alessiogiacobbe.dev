@@ -1,8 +1,10 @@
 import React, { Suspense, useEffect, useRef } from "react";
+import { isMobile } from 'react-device-detect';
+import Image from 'next/image'
 
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
-function SplineItem({ splineLink, splineItemName, hovered, customClasses = "!inline h-16 w-32" }) {
+function SplineItem({ splineLink, imageFallback = null, splineItemName, hovered, customClasses = "!inline h-16 w-32" }) {
     const spline = useRef();
 
     function onLoad(splineApp) {
@@ -21,8 +23,13 @@ function SplineItem({ splineLink, splineItemName, hovered, customClasses = "!inl
         }
     }, [hovered]);
 
-    return <Suspense fallback={<div></div>}>
-            <Spline onLoad={onLoad} className={customClasses} scene={splineLink} />
+    const useFallback = (isMobile && imageFallback != null)
+
+    return <Suspense fallback={<></>}>
+                <div className={useFallback ? "visible" : "!hidden"}>
+                    <Image  src={`/imagesFallback/${imageFallback}`} width="66" height="58" />
+                </div>
+                <Spline onLoad={onLoad} className={`${customClasses} ${useFallback ? "!hidden" : ""}`} scene={splineLink} />
     </Suspense>
 }
 

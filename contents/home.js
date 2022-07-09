@@ -3,7 +3,8 @@ export const sectionsItems = [
         name: "things_i_work_with",
         spline: {
             link: "https://prod.spline.design/JopwieTGs-1-lUdP/scene.splinecode",
-            itemName: "briefcase"
+            itemName: "briefcase",
+            fallback: "briefcase-agdev@10-66x58.png"
         },
         items: [
             {
@@ -27,7 +28,8 @@ export const sectionsItems = [
         name: "things_im_learning",
         spline: {
             link: "https://prod.spline.design/n2rMlcDURnYYY0z6/scene.splinecode",
-            itemName: "beaker"
+            itemName: "beaker",
+            fallback: "beaker-agdev@10-66x58.png"
         },
         items: [
             {
@@ -52,7 +54,8 @@ export const sectionsItems = [
         customSize: "w-72",
         spline: {
             link: "https://prod.spline.design/CavLkfy04ne77ekg/scene.splinecode",
-            itemName: "Pen holder"
+            itemName: "Pen holder",
+            fallback: "pencil-agdev@10-66x58.png"
         },
         items: [
             {
@@ -96,7 +99,8 @@ export const sectionsItems = [
         customSize: "w-72",
         spline: {
             link: "https://prod.spline.design/9HZ5jsPdPBI2hs04/scene.splinecode",
-            itemName: "funnel"
+            itemName: "funnel",
+            fallback: "hourglass-agdev@10-66x58.png"
         },
         items: [
             {
