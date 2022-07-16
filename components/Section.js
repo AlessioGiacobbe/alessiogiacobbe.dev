@@ -1,6 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
-import SplineItem from "./SplineItem";
+import SplineItem from "./FrameAnimation";
 import TopicCard from "./TopicCard";
 import { motion } from "framer-motion";
 import { container as containerAnimations, item as itemAnimations } from '../contents/animations';

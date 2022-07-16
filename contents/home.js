@@ -36,8 +36,8 @@ export const sectionsItems = [
             fallback: "beaker-agdev@10-66x58.png"
         },
         animationInfo : {
-            framesLocation: null,
-            frames: null,
+            framesLocation: "beaker-agdev",
+            frames: 54,
         },
         items: [
             {
@@ -115,8 +115,8 @@ export const sectionsItems = [
             fallback: "hourglass-agdev@10-66x58.png"
         },
         animationInfo : {
-            framesLocation: null,
-            frames: null,
+            framesLocation: "hourglass-agdev",
+            frames: 39,
         },
         items: [
             {

@@ -1,46 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useRef } from "react";
+import Image from 'next/image'
 
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
-function SplineItem({animationFramesLocation = null, animationFrames = 0, hovered, fps = 45, customClasses = "!inline h-16 w-32" }) {
-    const [frames, setFrames] = useState([])
-    const [currentFrame, setCurrentFrame] = useState(1)
+function SplineItem({ splineLink, imageFallback = null, splineItemName, hovered, customClasses = "h-16 w-32" }) {
+    const spline = useRef();
 
-    useEffect(() => {
-        if (animationFramesLocation) {
-            async function loadFrames() {
-                let framesRequests = Array.from({ length: animationFrames }, (x, i) => i + 1)
-                    .map((index) => fetch(`/imagesFrames/${animationFramesLocation}/${index}.png`)
-                        .then(r => r.blob()
-                            .then(blob => URL.createObjectURL(blob))))
-
-                let framesAsBlobURL = await Promise.all(framesRequests);
-                setFrames(framesAsBlobURL)
-            }
-
-            loadFrames()
-        }
-    }, [])
+    function onLoad(splineApp) {
+        spline.current = splineApp;
+    }
 
     useEffect(() => {
-        let interval = null;
-        if (hovered) {
-            interval = setInterval(() => {
-                setCurrentFrame((frame) => frame < animationFrames - 1 ? frame + 1 : frame)
-            }, 1000 / fps);
-        } else {
-            interval = setInterval(() => {
-                    setCurrentFrame((frame) => frame > 1 ? frame - 1 : frame)
-            }, 1000 / fps);
+        const triggerAnimation = () => {
+            spline.current.emitEvent('mouseDown', splineItemName);
+        };
+        const resetAnimation = () => {
+            spline.current.emitEvent('mouseUp', splineItemName);
         }
-        return () => {
-            clearInterval(interval);
+        if (spline.current) {
+            hovered ? triggerAnimation() : resetAnimation()
         }
     }, [hovered]);
 
 
-    return <div className="md:!inline">
-        <img className="ml-neg20 p-2.5" src={frames[currentFrame]} />
-    </div>
+    return <Suspense fallback={<></>}>
+        <div className="visible md:!hidden">
+            <Image src={`/imagesFallback/${imageFallback}`} width="66" height="58" />
+        </div>
+        <div className="hidden md:!inline">
+            <Spline onLoad={onLoad} className={customClasses} scene={splineLink} />
+        </div>
+    </Suspense>
 }
 
 export default SplineItem
