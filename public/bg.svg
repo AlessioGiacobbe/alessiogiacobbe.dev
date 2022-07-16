@@ -2,19 +2,19 @@
 <svg width="921px" height="289px" viewBox="0 0 921 289" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>bg</title>
     <defs>
-        <filter x="-23.9%" y="-38.5%" width="147.7%" height="177.1%" filterUnits="objectBoundingBox" id="filter-1">
-            <feGaussianBlur stdDeviation="30" in="SourceGraphic"></feGaussianBlur>
+        <filter x="-25.5%" y="-46.1%" width="150.9%" height="192.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="35" in="SourceGraphic"></feGaussianBlur>
         </filter>
-        <filter x="-23.9%" y="-38.5%" width="147.7%" height="177.1%" filterUnits="objectBoundingBox" id="filter-2">
-            <feGaussianBlur stdDeviation="30" in="SourceGraphic"></feGaussianBlur>
+        <filter x="-25.5%" y="-46.1%" width="150.9%" height="192.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="35" in="SourceGraphic"></feGaussianBlur>
         </filter>
-        <filter x="-27.3%" y="-36.4%" width="154.5%" height="172.9%" filterUnits="objectBoundingBox" id="filter-3">
-            <feGaussianBlur stdDeviation="30" in="SourceGraphic"></feGaussianBlur>
+        <filter x="-29.1%" y="-43.6%" width="158.2%" height="187.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="35" in="SourceGraphic"></feGaussianBlur>
         </filter>
     </defs>
     <g id="bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.76218378">
-        <rect id="Rectangle" fill="#6E45E2" filter="url(#filter-1)" x="120" y="-127.527273" width="377" height="233.527273" rx="78.5"></rect>
-        <rect id="Rectangle" fill="#764BA2" filter="url(#filter-2)" x="284" y="-127.527273" width="377" height="233.527273" rx="78.5"></rect>
-        <rect id="Rectangle" fill="#3F98CC" filter="url(#filter-3)" transform="translate(637.000000, -17.500000) rotate(180.000000) translate(-637.000000, 17.500000) " x="472" y="-141" width="330" height="247" rx="78.5"></rect>
+        <rect id="Rectangle" fill="#6E45E2" filter="url(#filter-1)" x="87.8143322" y="-59.2929619" width="412.480934" height="227.854545" rx="78.5"></rect>
+        <rect id="Rectangle" fill="#764BA2" filter="url(#filter-2)" x="267.249009" y="-59.2929619" width="412.480934" height="227.854545" rx="78.5"></rect>
+        <rect id="Rectangle" fill="#3F98CC" filter="url(#filter-3)" transform="translate(653.471209, 48.061584) rotate(180.000000) translate(-653.471209, -48.061584) " x="472.942419" y="-72.4384164" width="361.057581" height="241" rx="78.5"></rect>
     </g>
 </svg>
