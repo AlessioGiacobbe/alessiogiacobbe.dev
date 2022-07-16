@@ -17,8 +17,7 @@ module.exports = {
       margin: {
         '16': '3.5rem',
         '20': '4.5rem',
-        'neg20': '-1.25rem',
-        'neg15': '-0.938rem',
+        'neg20': '-1rem',
       },
       maxWidth: {
         '1/10': '10%',

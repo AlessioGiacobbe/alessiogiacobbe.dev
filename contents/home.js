@@ -7,8 +7,8 @@ export const sectionsItems = [
             fallback: "briefcase-agdev@10-66x58.png"
         },
         animationInfo : {
-            framesLocation: "pencil-agdev",
-            frames: 38,
+            framesLocation: "briefcase-agdev",
+            frames: 28,
         },
         items: [
             {
@@ -66,8 +66,8 @@ export const sectionsItems = [
             fallback: "pencil-agdev@10-66x58.png"
         },
         animationInfo : {
-            framesLocation: null,
-            frames: null,
+            framesLocation: "pencil-agdev",
+            frames: 38,
         },
         items: [
             {

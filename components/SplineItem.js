@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 
-function SplineItem({animationFramesLocation = null, animationFrames = 0, hovered, fps = 30, customClasses = "!inline h-16 w-32" }) {
+function SplineItem({animationFramesLocation = null, animationFrames = 0, hovered, fps = 45, customClasses = "!inline h-16 w-32" }) {
     const [frames, setFrames] = useState([])
     const [currentFrame, setCurrentFrame] = useState(1)
 
@@ -39,7 +39,7 @@ function SplineItem({animationFramesLocation = null, animationFrames = 0, hovere
 
 
     return <div className="md:!inline">
-        <img className="ml-neg20 mt-neg15" src={frames[currentFrame]} />
+        <img className="ml-neg20 p-2.5" src={frames[currentFrame]} />
     </div>
 }
 
