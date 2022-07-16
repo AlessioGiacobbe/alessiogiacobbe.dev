@@ -1,36 +1,46 @@
-import React, { Suspense, useEffect, useRef } from "react";
-import { isMobile } from 'react-device-detect';
-import Image from 'next/image'
+import React, { Suspense, useEffect, useRef, useState } from "react";
 
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
-function SplineItem({ splineLink, imageFallback = null, splineItemName, hovered, customClasses = "!inline h-16 w-32" }) {
-    const spline = useRef();
-
-    function onLoad(splineApp) {
-        spline.current = splineApp;
-    }
+function SplineItem({animationFramesLocation = null, animationFrames = 0, hovered, fps = 30, customClasses = "!inline h-16 w-32" }) {
+    const [frames, setFrames] = useState([])
+    const [currentFrame, setCurrentFrame] = useState(1)
 
     useEffect(() => {
-        const triggerAnimation = () => {
-            spline.current.emitEvent('mouseDown', splineItemName);
-        };
-        const resetAnimation = () => {
-            spline.current.emitEvent('mouseUp', splineItemName);
+        if (animationFramesLocation) {
+            async function loadFrames() {
+                let framesRequests = Array.from({ length: animationFrames }, (x, i) => i + 1)
+                    .map((index) => fetch(`/imagesFrames/${animationFramesLocation}/${index}.png`)
+                        .then(r => r.blob()
+                            .then(blob => URL.createObjectURL(blob))))
+
+                let framesAsBlobURL = await Promise.all(framesRequests);
+                setFrames(framesAsBlobURL)
+            }
+
+            loadFrames()
         }
-        if (spline.current) {
-            hovered ? triggerAnimation() : resetAnimation()
+    }, [])
+
+    useEffect(() => {
+        let interval = null;
+        if (hovered) {
+            interval = setInterval(() => {
+                setCurrentFrame((frame) => frame < animationFrames - 1 ? frame + 1 : frame)
+            }, 1000 / fps);
+        } else {
+            interval = setInterval(() => {
+                    setCurrentFrame((frame) => frame > 1 ? frame - 1 : frame)
+            }, 1000 / fps);
+        }
+        return () => {
+            clearInterval(interval);
         }
     }, [hovered]);
 
-    const useFallback = (isMobile && imageFallback != null)
 
-    return <Suspense fallback={<></>}>
-                <div className={useFallback ? "visible" : "!hidden"}>
-                    <Image  src={`/imagesFallback/${imageFallback}`} width="66" height="58" />
-                </div>
-                <Spline onLoad={onLoad} className={`${customClasses} ${useFallback ? "!hidden" : ""}`} scene={splineLink} />
-    </Suspense>
+    return <div className="md:!inline">
+        <img className="ml-neg20 mt-neg15" src={frames[currentFrame]} />
+    </div>
 }
 
 export default SplineItem

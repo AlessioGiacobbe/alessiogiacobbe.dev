@@ -6,6 +6,10 @@ export const sectionsItems = [
             itemName: "briefcase",
             fallback: "briefcase-agdev@10-66x58.png"
         },
+        animationInfo : {
+            framesLocation: "pencil-agdev",
+            frames: 38,
+        },
         items: [
             {
                 "title" : "react",
@@ -30,6 +34,10 @@ export const sectionsItems = [
             link: "https://prod.spline.design/n2rMlcDURnYYY0z6/scene.splinecode",
             itemName: "beaker",
             fallback: "beaker-agdev@10-66x58.png"
+        },
+        animationInfo : {
+            framesLocation: null,
+            frames: null,
         },
         items: [
             {
@@ -56,6 +64,10 @@ export const sectionsItems = [
             link: "https://prod.spline.design/CavLkfy04ne77ekg/scene.splinecode",
             itemName: "Pen holder",
             fallback: "pencil-agdev@10-66x58.png"
+        },
+        animationInfo : {
+            framesLocation: null,
+            frames: null,
         },
         items: [
             {
@@ -101,6 +113,10 @@ export const sectionsItems = [
             link: "https://prod.spline.design/9HZ5jsPdPBI2hs04/scene.splinecode",
             itemName: "funnel",
             fallback: "hourglass-agdev@10-66x58.png"
+        },
+        animationInfo : {
+            framesLocation: null,
+            frames: null,
         },
         items: [
             {
