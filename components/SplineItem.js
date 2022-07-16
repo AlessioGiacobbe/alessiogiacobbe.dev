@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 
 function SplineItem({animationFramesLocation = null, animationFrames = 0, hovered, fps = 30, customClasses = "!inline h-16 w-32" }) {
