@@ -6,7 +6,7 @@ function Hero() {
     const { t } = useTranslation('index');
 
     return <div>
-        <div className="text-1xl bg-hero-bg bg-size-100 relative h-110  w-full overflow-hidden m-auto">
+        <div className="text-1xl bg-hero-bg bg-no-repeat bg-top md:bg-size-100 relative h-110  w-full overflow-hidden m-auto">
             <div className='left-1/2  transform -translate-x-1/2 absolute h-110 max-w-7xl w-full text-white flex flex-col justify-center px-8 transition duration-300 ease-in-out'>
                 <div className='font-bold text-3xl'>
                     <motion.ul
