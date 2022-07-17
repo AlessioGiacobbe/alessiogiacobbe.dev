@@ -17,6 +17,10 @@ module.exports = {
       margin: {
         '16': '3.5rem',
         '20': '4.5rem',
+        'neg20': '-1rem',
+      },
+      backgroundImage: {
+        'hero-bg': "url('/bg.svg')",
       },
       maxWidth: {
         '1/10': '10%',
@@ -41,6 +45,7 @@ module.exports = {
       },
       backgroundSize: {
         'size-200': '200% 200%',
+        'size-100': '100% 100%'
       },
       backgroundPosition: {
         'pos-0': '0% 0%',

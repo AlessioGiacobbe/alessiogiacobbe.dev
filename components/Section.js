@@ -1,6 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
-import SplineItem from "./SplineItem";
+import SplineItem from "./FrameAnimation";
 import TopicCard from "./TopicCard";
 import { motion } from "framer-motion";
 import { container as containerAnimations, item as itemAnimations } from '../contents/animations';
@@ -15,7 +15,7 @@ function Section({ section, index }) {
                 <div className='relative z-0 shadow-cool-purple-border inline-block bg-[#9575CD50] text-[#FFFFFFEE] pr-4 font-bold py-2 rounded-xl'>
                     <p className="ml-20 text-xl">{t(section.name)}</p>
                     <div className="absolute w-24 inset-0 flex  items-center z-10">
-                        {section.spline.link && <SplineItem imageFallback={section.spline.fallback} splineLink={section.spline.link} splineItemName={section.spline.itemName} hovered={isHovered} />}
+                        {section.spline.link && <SplineItem animationFramesLocation={section.animationInfo.framesLocation} animationFrames={section.animationInfo.frames} imageFallback={section.spline.fallback} splineLink={section.spline.link} splineItemName={section.spline.itemName} hovered={isHovered} />}
                     </div>
                 </div>
             </div>
