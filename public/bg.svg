@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="921px" height="289px" viewBox="0 0 921 289" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="967px" height="317px" viewBox="0 0 967 317" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>bg</title>
     <defs>
-        <filter x="-25.5%" y="-46.1%" width="150.9%" height="192.2%" filterUnits="objectBoundingBox" id="filter-1">
-            <feGaussianBlur stdDeviation="35" in="SourceGraphic"></feGaussianBlur>
+        <filter x="-30.5%" y="-73.5%" width="161.0%" height="247.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur color-interpolation-filters="sRGB" stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
         </filter>
-        <filter x="-25.5%" y="-46.1%" width="150.9%" height="192.2%" filterUnits="objectBoundingBox" id="filter-2">
-            <feGaussianBlur stdDeviation="35" in="SourceGraphic"></feGaussianBlur>
+        <filter x="-39.6%" y="-64.7%" width="179.2%" height="229.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur color-interpolation-filters="sRGB" stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
         </filter>
-        <filter x="-29.1%" y="-43.6%" width="158.2%" height="187.1%" filterUnits="objectBoundingBox" id="filter-3">
-            <feGaussianBlur stdDeviation="35" in="SourceGraphic"></feGaussianBlur>
+        <filter x="-37.7%" y="-64.7%" width="175.4%" height="229.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur color-interpolation-filters="sRGB" stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
         </filter>
     </defs>
-    <g id="bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.76218378">
-        <rect id="Rectangle" fill="#6E45E2" filter="url(#filter-1)" x="87.8143322" y="-59.2929619" width="412.480934" height="227.854545" rx="78.5"></rect>
-        <rect id="Rectangle" fill="#764BA2" filter="url(#filter-2)" x="267.249009" y="-59.2929619" width="412.480934" height="227.854545" rx="78.5"></rect>
-        <rect id="Rectangle" fill="#3F98CC" filter="url(#filter-3)" transform="translate(653.471209, 48.061584) rotate(180.000000) translate(-653.471209, -48.061584) " x="472.942419" y="-72.4384164" width="361.057581" height="241" rx="78.5"></rect>
+    <g id="bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(85.000000, -59.000000)">
+            <rect id="Rectangle" fill="#6E45E2" filter="url(#filter-1)" x="0" y="20" width="492" height="204" rx="102"></rect>
+            <rect id="Rectangle" fill="#764BA2" filter="url(#filter-2)" x="207" y="11" width="379" height="232" rx="116"></rect>
+            <rect id="Rectangle" fill="#4098CC" filter="url(#filter-3)" x="399" y="0" width="398" height="232" rx="115"></rect>
+        </g>
     </g>
 </svg>
