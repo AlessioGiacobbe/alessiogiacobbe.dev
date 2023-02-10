@@ -1,5 +1,6 @@
 import ReactIcon from "../assets/react.svg";
 import KubernetesIcon from "../assets/kubernetes.svg"
+import RustIcon from "../assets/rust.svg";
 import CpuIcon from "../assets/cpu.svg"
 import DockerIcon from "../assets/docker.svg"
 import LaravelIcon from "../assets/laravel.svg"
@@ -10,6 +11,7 @@ import { GitHub, ArrowUpRight, Mail, Twitter, FileText } from 'react-feather';
 
 const icons = {
     react: ReactIcon,
+    rust: RustIcon,
     next: NextIcon,
     kubernetes: KubernetesIcon,
     cpu: CpuIcon,
