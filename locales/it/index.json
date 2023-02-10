@@ -24,5 +24,6 @@
     "laravel": "Laravel",
     "react": "React",
     "kubernetes": "Kubernetes",
-    "docker": "Docker"
+    "docker": "Docker",
+    "certifications": "Certificazioni"
 }
