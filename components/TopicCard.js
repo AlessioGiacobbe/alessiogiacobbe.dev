@@ -34,9 +34,10 @@ function TopicCard({ topic, size = "w-64" }) {
                         </div>
                     </div>
                     {
-                        topic.since &&
+                        topic.since || topic.role &&
                         <p className="text-sm uppercase mix-blend-soft-light opacity-80	">
-                            {topic.role && `${topic.role} \u2022 `}{topicDuration.humanize()}
+                            {(topic.since && topic.role) && `${topic.role} \u2022 ${topicDuration.humanize()}`}
+                            {(!topic.since && topic.role) && `${topic.role}`}
                         </p>
                     }
                     {

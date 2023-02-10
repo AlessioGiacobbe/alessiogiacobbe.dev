@@ -136,5 +136,24 @@ export const sectionsItems = [
         "role": "Fullstack"
       }
     ]
+  },
+  {
+    name: "certifications",
+    customSize: "w-72",
+    spline: {
+      link: "https://prod.spline.design/9HZ5jsPdPBI2hs04/scene.splinecode",
+      itemName: "certification",
+      fallback: "certification-agedev@10-66x58.png"
+    },
+    animationInfo: {
+      framesLocation: "certification-agedev",
+      frames: 25,
+    },
+    items: [
+      {
+        "title": "AZ-900",
+        "role": "Microsoft Azure Fundamentals"
+      }
+    ]
   }
 ]
