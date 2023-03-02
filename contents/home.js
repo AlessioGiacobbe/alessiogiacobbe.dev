@@ -86,6 +86,16 @@ export const sectionsItems = [
         ]
       },
       {
+        "title": "pogboy",
+        "description": "pogboy_descr",
+        "links": [
+          {
+            "icon": "github",
+            "link": "https://github.com/AlessioGiacobbe/PogBoy"
+          }
+        ]
+      },
+      {
         "title": "isaac_leaderboard",
         "description": "isaac_leaderboard_descr",
         "links": [

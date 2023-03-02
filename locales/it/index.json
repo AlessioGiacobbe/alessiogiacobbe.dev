@@ -10,6 +10,8 @@
     "built_with": "Realizzato con",
     "hosted_on": "hostato su",
     "finsa": "Finsa S.p.A",
+    "pogboy": "PogBoy",
+    "pogboy_descr": "Un emulatore di Gameboy in corso d'opera che ho realizzato per imparare Rust",
     "gaslini": "Ospedale Giannina Gaslini",
     "freelance": "Freelancer",
     "isaac_leaderboard": "Leaderboard BoI",
