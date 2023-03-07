@@ -14,6 +14,8 @@
     "pogboy_descr": "Un emulatore di Gameboy in corso d'opera che ho realizzato per imparare Rust",
     "gaslini": "Ospedale Giannina Gaslini",
     "freelance": "Freelancer",
+    "romwriter": "ß-RomWriter",
+    "romwriter_descr": "Un tool per creare ROM per microprocessori compatibili con i banchi di memoria di Logisim",
     "isaac_leaderboard": "Leaderboard BoI",
     "isaac_leaderboard_descr": "Una carina leaderboard online per tenere i punteggi di un gioco da tavolo",
     "betamicroprocessor": "Microprocessore β",
