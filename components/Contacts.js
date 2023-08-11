@@ -8,7 +8,7 @@ import TopicIcon from "./TopicIcon";
 function Contacts() {
     const { t } = useTranslation('index');
     const [isHovered, setIsHovered] = useState(false);
-    const { ref, inView, entry } = useInView({ triggerOnce: true, rootMargin: "50px" });
+    const { ref, inView, entry } = useInView({ triggerOnce: true, rootMargin: "250px" });
 
     return <div className="mx-auto items-center flex transform h-20 sm:h-100 text-white  text-center max-w-7xl mt-24 mb-24 md:mt-6 md:mb-0">
         <div className="mx-auto w-11/12 sm:hidden">
@@ -39,7 +39,7 @@ function Contacts() {
                 </div>
             </div>
         </div>
-        <div ref={ref} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="mx-auto hidden md:block">
+        <div ref={ref} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="mx-auto cursor-pointer hidden md:block">
             {
                 inView && <SplineItem splineLink="https://prod.spline.design/hFvwmdrlIakDYHon/scene.splinecode" splineItemName="Console" hovered={isHovered} className="" />
             }
