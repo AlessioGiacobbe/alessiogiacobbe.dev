@@ -149,7 +149,13 @@ export const sectionsItems = [
     },
     items: [
       {
+        "title": "onpage",
+        "since": "01/09/2023",
+        "role": "Fullstack DevOps"
+      },
+      {
         "title": "finsa",
+        "end": "01/09/2023",
         "since": "01/01/2022",
         "role": "Front end"
       },
