@@ -11,7 +11,7 @@ function Contacts() {
     const { ref, inView, entry } = useInView({ triggerOnce: true, rootMargin: "250px" });
 
     return <div className="mx-auto items-center flex transform h-20 sm:h-100 text-white  text-center max-w-7xl mt-24 mb-24 md:mt-6 md:mb-0">
-        <div className="mx-auto w-11/12 sm:hidden">
+        <div className="mx-auto w-11/12">
             <h1 className="text-4xl font-extrabold mb-2">{t('contacts_get_in_touch')}</h1>
             <div className="flex justify-between w-2/3 mx-auto mt-9">
                 <div>
@@ -39,7 +39,7 @@ function Contacts() {
                 </div>
             </div>
         </div>
-        <div ref={ref} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="mx-auto cursor-pointer hidden md:block">
+        <div ref={ref} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="mx-auto cursor-pointer hidden">
             {
                 inView && <SplineItem splineLink="https://prod.spline.design/hFvwmdrlIakDYHon/scene.splinecode" splineItemName="Console" hovered={isHovered} className="" />
             }
