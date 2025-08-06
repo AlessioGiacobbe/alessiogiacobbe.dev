@@ -22,10 +22,15 @@ export const sectionsItems = [
         "since": "09/01/2020",
       },
       {
-        "title": "symfony",
-        "iconName": "symfony",
+        "title": "docker",
+        "iconName": "docker",
         "since": "01/01/2022",
-      }
+      },
+      {
+        "title": "rust",
+        "iconName": "rust",
+        "since": "01/10/2022",
+      },
     ]
   },
   {
@@ -44,16 +49,6 @@ export const sectionsItems = [
         "title": "next-js",
         "iconName": "next",
         "since": "04/01/2022",
-      },
-      {
-        "title": "rust",
-        "iconName": "rust",
-        "since": "01/10/2022",
-      },
-      {
-        "title": "docker",
-        "iconName": "docker",
-        "since": "01/01/2022",
       },
       {
         "title": "kubernetes",
@@ -149,7 +144,13 @@ export const sectionsItems = [
     },
     items: [
       {
+        "title": "Reset energia",
+        "since": "01/04/2025",
+        "role": "Backend Developer",
+      },
+      {
         "title": "onpage",
+        "end": "01/04/2025",
         "since": "01/09/2023",
         "role": "Fullstack DevOps"
       },
@@ -157,13 +158,13 @@ export const sectionsItems = [
         "title": "finsa",
         "end": "01/09/2023",
         "since": "01/01/2022",
-        "role": "Front end"
+        "role": "Frontend Developer"
       },
       {
         "title": "gaslini",
         "end": "01/01/2022",
         "since": "09/01/2020",
-        "role": "Fullstack"
+        "role": "Fullstack Developer"
       }
     ]
   },

@@ -34,10 +34,11 @@ function TopicCard({ topic, size = "w-64" }) {
                         </div>
                     </div>
                     {
-                        topic.since || topic.role &&
-                        <p className="text-sm uppercase mix-blend-soft-light opacity-80	">
+                        (topic.since || topic.role) &&
+                        <p className="text-sm mix-blend-soft-light opacity-80	">
                             {(topic.since && topic.role) && `${topic.role} \u2022 ${topicDuration.humanize()}`}
                             {(!topic.since && topic.role) && `${topic.role}`}
+                            {(topic.since && !topic.role) && `${moment(topic.since, "DD/MM/YYYY").format("MMM YYYY")}`}
                         </p>
                     }
                     {

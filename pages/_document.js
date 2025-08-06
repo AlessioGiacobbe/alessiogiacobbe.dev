@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import useTranslation from "next-translate/useTranslation";
+import { Analytics } from '@vercel/analytics/next';
 
 export default function Document() {
     const { t } = useTranslation('index');
@@ -18,6 +19,7 @@ export default function Document() {
             <body>
                 <Main />
                 <NextScript />
+                <Analytics />
             </body>
         </Html>
     )
