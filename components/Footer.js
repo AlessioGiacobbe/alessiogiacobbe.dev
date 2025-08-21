@@ -18,11 +18,6 @@ function Footer() {
                 </a>
             </div>
             <div className="w-96 flex justify-end">
-                <span>{t('built_with')}
-                    <a href="https://nextjs.org/"><NextjsIcon className="inline-block align-middle scale-50" /></a>
-                    {t('hosted_on')}
-                    <a href="https://vercel.com/"><VercelIcon className="inline-block mx-2 align-baseline" /></a>
-                </span>
             </div>
         </div>
     </footer>

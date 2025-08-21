@@ -113,21 +113,7 @@ export const sectionsItems = [
             "link": "https://github.com/AlessioGiacobbe/BetaMp-2017"
           }
         ]
-      },
-      {
-        "title": "romwriter",
-        "description": "romwriter_descr",
-        "links": [
-          {
-            "icon": "github",
-            "link": "https://github.com/AlessioGiacobbe/Rom-Writer-For-Logisim"
-          },
-          {
-            "icon": "arrowUpRight",
-            "link": "https://rom-writer.alessiogiacobbe.dev/"
-          }
-        ]
-      },
+      }
     ]
   },
   {
