@@ -21,9 +21,6 @@ function Hero() {
                     <a href="Alessio Giacobbe CV.pdf" target="_blank" rel="noopener noreferrer" className="text-ink-muted hover:text-ink transition-colors">
                         <TopicIcon iconName="document" size={22} />
                     </a>
-                    <a href="https://twitter.com/GiacobbeAlessio" className="text-ink-muted hover:text-ink transition-colors">
-                        <TopicIcon iconName="twitter" size={22} />
-                    </a>
                     <a href="https://github.com/AlessioGiacobbe" className="text-ink-muted hover:text-ink transition-colors">
                         <TopicIcon iconName="github" size={22} />
                     </a>

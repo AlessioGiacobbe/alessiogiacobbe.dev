@@ -12,7 +12,7 @@ function Pill({ item }) {
                 <p className="font-black text-sm text-ink leading-none">{t(item.title)}</p>
                 {item.since && (
                     <p className="text-ink-muted text-xs mt-0.5 font-medium">
-                        since {moment(item.since, "DD/MM/YYYY").format("MMM YYYY")}
+                        since {moment(item.since, "DD/MM/YYYY").format("YYYY")}
                     </p>
                 )}
             </div>
@@ -22,23 +22,15 @@ function Pill({ item }) {
 
 function StackSection() {
     const { t } = useTranslation('index');
-    const working = sectionsItems.find(s => s.name === 'things_i_work_with');
-    const learning = sectionsItems.find(s => s.name === 'things_im_learning');
+    const section = sectionsItems.find(s => s.name === 'things_i_work_with');
 
     return (
         <div>
             <p className="text-xs font-black uppercase tracking-widest text-ink-muted mb-3">
                 {t('things_i_work_with')}
             </p>
-            <div className="flex flex-wrap gap-2 mb-8">
-                {working.items.map((item, i) => <Pill key={i} item={item} />)}
-            </div>
-
-            <p className="text-xs font-black uppercase tracking-widest text-ink-muted mb-3">
-                {t('things_im_learning')}
-            </p>
             <div className="flex flex-wrap gap-2">
-                {learning.items.map((item, i) => <Pill key={i} item={item} />)}
+                {section.items.map((item, i) => <Pill key={i} item={item} />)}
             </div>
         </div>
     );

@@ -9,11 +9,6 @@ export const sectionsItems = [
       { title: "docker",     iconName: "docker",     since: "01/01/2022" },
       { title: "postgresql", iconName: "postgresql", since: "01/01/2021" },
       { title: "redis",      iconName: "redis",      since: "01/06/2022" },
-    ]
-  },
-  {
-    name: "things_im_learning",
-    items: [
       { title: "rust",       iconName: "rust",       since: "01/10/2022" },
       { title: "next-js",    iconName: "next",       since: "04/01/2022" },
       { title: "kubernetes", iconName: "kubernetes", since: "01/01/2022" },
@@ -23,9 +18,9 @@ export const sectionsItems = [
     name: "things_i_did",
     items: [
       {
-        title: "this_website",
-        description: "this_website_descr",
-        links: [{ icon: "github", link: "https://github.com/AlessioGiacobbe/alessiogiacobbe.dev" }]
+        title: "ruve",
+        description: "ruve_descr",
+        links: [{ icon: "github", link: "https://github.com/AlessioGiacobbe/RuVe" }]
       },
       {
         title: "pogboy",
@@ -50,7 +45,7 @@ export const sectionsItems = [
   {
     name: "where_i_have_worked",
     items: [
-      { title: "Reset energia", since: "01/04/2025",                    role: "Backend Developer" },
+      { title: "Reset energia", since: "01/04/2025",                    role: "Lead Backend Developer" },
       { title: "onpage",        since: "01/09/2023", end: "01/04/2025", role: "Fullstack DevOps" },
       { title: "finsa",         since: "01/01/2022", end: "01/09/2023", role: "Frontend Developer" },
       { title: "gaslini",       since: "09/01/2020", end: "01/01/2022", role: "Fullstack Developer" },

@@ -7,17 +7,23 @@ import Footer from '../components/Footer';
 export default function Home() {
     return (
         <div className="max-w-6xl mx-auto px-8">
-            <Hero />
-            <div className="grid grid-cols-5 gap-10 pb-16">
-                <div className="col-span-2 space-y-10">
+            <div className="animate-fade-in-up" style={{ animationDelay: '0s' }}>
+                <Hero />
+            </div>
+            <div className="grid grid-cols-2 gap-6 pb-12">
+                <div className="animate-fade-in-up" style={{ animationDelay: '0.12s' }}>
                     <StackSection />
+                </div>
+                <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                     <WorkSection />
                 </div>
-                <div className="col-span-3">
-                    <ProjectsSection />
-                </div>
             </div>
-            <Footer />
+            <div className="pb-16 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                <ProjectsSection />
+            </div>
+            <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                <Footer />
+            </div>
         </div>
     );
 }

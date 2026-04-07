@@ -7,11 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "panna":        "#FEF8EE",
-        "panna-2":      "#FAE4B0",
-        "panna-border": "#C9903A",
-        "ink":          "#1E120A",
-        "ink-muted":    "#8C6239",
+        "panna":        "var(--color-panna)",
+        "panna-2":      "var(--color-panna-2)",
+        "panna-border": "var(--color-panna-border)",
+        "ink":          "var(--color-ink)",
+        "ink-muted":    "var(--color-ink-muted)",
+      },
+      animation: {
+        'fade-in-up':  'fadeInUp 0.55s ease-out both',
+        'float-dust':  'floatDust 7s ease-in-out infinite',
       },
     },
   },

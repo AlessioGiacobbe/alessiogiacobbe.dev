@@ -18,7 +18,7 @@
     "@vercel/analytics": "^1.5.0",
     "framer-motion": "^6.3.11",
     "moment": "^2.29.4",
-    "next": "^15.4.5",
+    "next": "~15.5.14",
     "next-compose-plugins": "^2.2.1",
     "next-translate": "^1.4.0",
     "react": "^18.2.0",
