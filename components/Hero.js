@@ -1,27 +1,36 @@
 import useTranslation from 'next-translate/useTranslation';
-import { animations, motion } from "framer-motion";
-import { container as containerAnimations, item as itemAnimations } from '../contents/animations';
+import TopicIcon from './TopicIcon';
 
 function Hero() {
     const { t } = useTranslation('index');
 
-    return <div>
-        <div className="text-1xl bg-hero-bg bg-no-repeat bg-top md:bg-size-100 relative h-110  w-full overflow-hidden m-auto">
-            <div className='left-1/2  transform -translate-x-1/2 absolute h-110 max-w-7xl w-full text-white flex flex-col justify-center px-8 transition duration-300 ease-in-out'>
-                <div className='font-bold text-3xl'>
-                    <motion.ul
-                        variants={containerAnimations}
-                        initial="hidden"
-                        animate="visible">
-                        <motion.li variants={itemAnimations}><div className='text-2xl ext-slate-400 opacity-70'>{t('hero_im')}</div></motion.li>
-                        <motion.li variants={itemAnimations}><div className='text-7xl font-extrabold mb-2'>Alessio Giacobbe</div></motion.li>
-                        <motion.li variants={itemAnimations}><div className='opacity-70  text-2xl'>{t('hero_subtitle', { exp_years: new Date().getFullYear() - 2019 })}</div></motion.li>
-                    </motion.ul>
+    return (
+        <div className="py-16 pb-12">
+            <p className="text-ink-muted text-base font-semibold mb-2">{t('hero_im')}</p>
+            <h1 className="text-8xl font-black text-ink tracking-tighter leading-none mb-8">
+                Alessio<br />Giacobbe
+            </h1>
+            <div className="flex items-end justify-between flex-wrap gap-6">
+                <p className="text-ink-muted text-xl font-medium max-w-lg leading-relaxed">
+                    {t('hero_subtitle', { exp_years: new Date().getFullYear() - 2019 })}
+                </p>
+                <div className="flex gap-5 items-center">
+                    <a href="mailto:giacobbealessio@gmail.com" className="text-ink-muted hover:text-ink transition-colors">
+                        <TopicIcon iconName="mail" size={22} />
+                    </a>
+                    <a href="Alessio Giacobbe CV.pdf" target="_blank" rel="noopener noreferrer" className="text-ink-muted hover:text-ink transition-colors">
+                        <TopicIcon iconName="document" size={22} />
+                    </a>
+                    <a href="https://twitter.com/GiacobbeAlessio" className="text-ink-muted hover:text-ink transition-colors">
+                        <TopicIcon iconName="twitter" size={22} />
+                    </a>
+                    <a href="https://github.com/AlessioGiacobbe" className="text-ink-muted hover:text-ink transition-colors">
+                        <TopicIcon iconName="github" size={22} />
+                    </a>
                 </div>
             </div>
-
         </div>
-    </div>
+    );
 }
 
 export default Hero
