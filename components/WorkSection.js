@@ -2,37 +2,46 @@ import useTranslation from 'next-translate/useTranslation';
 import { sectionsItems } from '../contents/home';
 import moment from 'moment';
 
-function WorkSection() {
+export default function WorkSection() {
     const { t } = useTranslation('index');
     const jobs = sectionsItems.find(s => s.name === 'where_i_have_worked');
     const certs = sectionsItems.find(s => s.name === 'certifications');
 
     return (
         <div>
-            <p className="text-xs font-black uppercase tracking-widest text-ink-muted mb-4">
-                {t('where_i_have_worked')}
+            <p className="text-muted text-xs mb-8">
+                {'//' + t('where_i_have_worked').toLowerCase()}
             </p>
-            <div className="space-y-4">
+            <div className="space-y-10">
                 {jobs.items.map((item, i) => {
-                    const end = item.end ? moment(item.end, "DD/MM/YYYY") : moment();
-                    const duration = moment.duration(end.diff(moment(item.since, "DD/MM/YYYY")));
-                    const isCurrent = !item.end;
+                    const since = moment(item.since, "DD/MM/YYYY").format("MMM YYYY").toLowerCase();
+                    const end = item.end
+                        ? moment(item.end, "DD/MM/YYYY").format("MMM YYYY").toLowerCase()
+                        : 'present';
                     return (
-                        <div key={i} className="flex gap-3">
-                            <div className="flex flex-col items-center pt-1.5">
-                                <div className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${isCurrent ? 'bg-ink' : 'bg-panna-border'}`} />
-                                {i < jobs.items.length - 1 && (
-                                    <div className="w-px flex-1 mt-1.5 bg-panna-border" />
+                        <div key={i} className="flex gap-8">
+                            <span className="text-muted text-sm w-48 flex-shrink-0 pt-0.5">
+                                {since} - {end}
+                            </span>
+                            <div className="flex-1">
+                                <div className="mb-3">
+                                    <span className="border border-line px-2.5 py-1 text-sm">
+                                        {t(item.title)}
+                                    </span>
+                                    <span className="text-muted text-sm ml-3">
+                                        {'//' + item.role.toLowerCase()}
+                                    </span>
+                                </div>
+                                {item.details && item.details.length > 0 && (
+                                    <ul className="space-y-2 mt-3">
+                                        {item.details.map((detail, j) => (
+                                            <li key={j} className="flex gap-3 text-sm leading-relaxed">
+                                                <span className="text-muted mt-1.5 flex-shrink-0">&#9679;</span>
+                                                <span>{detail}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 )}
-                            </div>
-                            <div className="pb-4">
-                                <p className="font-black text-base text-ink leading-tight">{t(item.title)}</p>
-                                <p className="text-ink-muted text-sm font-semibold mt-0.5">
-                                    {item.role}
-                                </p>
-                                <p className="text-ink-muted text-xs mt-0.5">
-                                    {duration.humanize()}{isCurrent ? ' · now' : ''}
-                                </p>
                             </div>
                         </div>
                     );
@@ -40,22 +49,25 @@ function WorkSection() {
             </div>
 
             {certs && certs.items.length > 0 && (
-                <div className="mt-8">
-                    <p className="text-xs font-black uppercase tracking-widest text-ink-muted mb-3">
-                        {t('certifications')}
+                <div className="mt-14">
+                    <p className="text-muted text-xs mb-4">
+                        {'//' + t('certifications').toLowerCase()}
                     </p>
-                    <div className="space-y-2">
-                        {certs.items.map((item, i) => (
-                            <div key={i} className="bg-panna-2 border-2 border-dashed border-panna-border rounded-xl px-4 py-3">
-                                <p className="font-black text-base text-ink">{item.title}</p>
-                                <p className="text-ink-muted text-sm font-medium">{item.role}</p>
+                    {certs.items.map((item, i) => (
+                        <div key={i} className="flex gap-8">
+                            <span className="w-48 flex-shrink-0" />
+                            <div>
+                                <span className="border border-line px-2.5 py-1 text-sm">
+                                    {item.title}
+                                </span>
+                                <span className="text-muted text-sm ml-3">
+                                    {'//' + item.role.toLowerCase()}
+                                </span>
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             )}
         </div>
     );
 }
-
-export default WorkSection

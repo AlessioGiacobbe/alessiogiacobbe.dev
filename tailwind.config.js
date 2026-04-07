@@ -7,18 +7,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "panna":        "var(--color-panna)",
-        "panna-2":      "var(--color-panna-2)",
-        "panna-border": "var(--color-panna-border)",
-        "ink":          "var(--color-ink)",
-        "ink-muted":    "var(--color-ink-muted)",
+        page:    "var(--color-bg)",
+        surface: "var(--color-surface)",
+        line:    "var(--color-line)",
+        ink:     "var(--color-ink)",
+        muted:   "var(--color-muted)",
+        accent:  "var(--color-accent)",
       },
       animation: {
-        'fade-in-up':  'fadeInUp 0.55s ease-out both',
-        'float-dust':  'floatDust 7s ease-in-out infinite',
+        'fade-in-up': 'fadeInUp 0.5s ease-out both',
+        'float-dust': 'floatDust 8s ease-in-out infinite',
       },
     },
   },
   plugins: [],
-  safelist: ['w-72'],
 }
