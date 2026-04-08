@@ -1,6 +1,7 @@
 import useTranslation from 'next-translate/useTranslation';
 import { sectionsItems } from '../contents/home';
 import moment from 'moment';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 export default function WorkSection() {
     const { t } = useTranslation('index');
@@ -9,7 +10,7 @@ export default function WorkSection() {
 
     return (
         <div>
-            <p className="text-muted text-xs mb-8">
+            <p className="text-muted mb-8">
                 {'//' + t('where_i_have_worked').toLowerCase()}
             </p>
             <div className="space-y-10">
@@ -25,9 +26,17 @@ export default function WorkSection() {
                             </span>
                             <div className="flex-1">
                                 <div className="mb-3">
-                                    <span className="border border-line px-2.5 py-1 text-sm">
-                                        {t(item.title)}
-                                    </span>
+                                    {item.url ? (
+                                        <a href={item.url} target="_blank" rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1 border border-line px-2.5 py-1 text-sm hover:border-accent hover:text-accent transition-colors">
+                                            {t(item.title)}
+                                            <FiArrowUpRight size={12} className="opacity-50" />
+                                        </a>
+                                    ) : (
+                                        <span className="border border-line px-2.5 py-1 text-sm">
+                                            {t(item.title)}
+                                        </span>
+                                    )}
                                     <span className="text-muted text-sm ml-3">
                                         {'//' + item.role.toLowerCase()}
                                     </span>
@@ -50,7 +59,7 @@ export default function WorkSection() {
 
             {certs && certs.items.length > 0 && (
                 <div className="mt-14">
-                    <p className="text-muted text-xs mb-4">
+                    <p className="text-muted mb-4">
                         {'//' + t('certifications').toLowerCase()}
                     </p>
                     {certs.items.map((item, i) => (

@@ -8,10 +8,10 @@ export default function StackSection() {
 
     return (
         <div>
-            <p className="text-muted text-xs mb-4">
+            <p className="text-muted mb-4">
                 {'//' + t('things_i_work_with').toLowerCase()}
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap justify-between gap-y-3">
                 {section.items.map((item, i) => (
                     <span
                         key={i}

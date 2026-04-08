@@ -45,10 +45,10 @@ export const sectionsItems = [
   {
     name: "where_i_have_worked",
     items: [
-      { title: "Reset energia", since: "01/04/2025",                    role: "Lead Backend Developer" },
-      { title: "onpage",        since: "01/09/2023", end: "01/04/2025", role: "Fullstack DevOps" },
-      { title: "finsa",         since: "01/01/2022", end: "01/09/2023", role: "Frontend Developer" },
-      { title: "gaslini",       since: "09/01/2020", end: "01/01/2022", role: "Fullstack Developer" },
+      { title: "Reset energia", since: "01/04/2025",                    role: "Lead Backend Developer", url: "https://resetenergia.it/",    details: [] },
+      { title: "onpage",        since: "01/09/2023", end: "01/04/2025", role: "Fullstack DevOps",        url: "https://onpage.it/",          details: [] },
+      { title: "finsa",         since: "01/01/2022", end: "01/09/2023", role: "Frontend Developer",      url: "https://finsa.it/it",         details: [] },
+      { title: "gaslini",       since: "09/01/2020", end: "01/01/2022", role: "Fullstack Developer",     url: "https://www.gaslini.org/",    details: [] },
     ]
   },
   {

@@ -12,6 +12,15 @@
   --color-accent:   hsl(var(--hue), 40%, 50%);
 }
 
+[data-theme="dark"] {
+  --color-bg:      #191919;
+  --color-surface:  #212121;
+  --color-line:     #2E2E2E;
+  --color-ink:      #E2E2E2;
+  --color-muted:    #686868;
+  --color-accent:   hsl(var(--hue), 40%, 62%);
+}
+
 html,
 body {
   padding: 0;

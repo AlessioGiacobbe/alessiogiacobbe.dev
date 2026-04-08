@@ -8,7 +8,7 @@ export default function ProjectsSection() {
 
     return (
         <div>
-            <p className="text-muted text-xs mb-4">
+            <p className="text-muted mb-4">
                 {'//' + t('things_i_did').toLowerCase()}
             </p>
             <div className="grid grid-cols-2 gap-4">

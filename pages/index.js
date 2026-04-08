@@ -4,31 +4,35 @@ import StackSection from '../components/StackSection';
 import WorkSection from '../components/WorkSection';
 import ProjectsSection from '../components/ProjectsSection';
 import Footer from '../components/Footer';
+import ThemeToggle from '../components/ThemeToggle';
 
 export default function Home() {
     const { t } = useTranslation('index');
 
     return (
-        <div className="max-w-5xl mx-auto px-12">
-            {/* Top info bar */}
-            <nav className="animate-fade-in-up flex items-start py-10 border-b border-line divide-x divide-line">
-                <div className="pr-10">
+        <div className="max-w-6xl mx-auto px-16">
+            {/* Top info bar with vertical dividers */}
+            <nav className="animate-fade-in-up flex items-start py-10 border-b border-line">
+                <div className="pr-12 border-r border-line">
                     <span className="text-muted text-xs block mb-1">{'//portfolio'}</span>
                     <span>alessiogiacobbe.dev</span>
                 </div>
-                <div className="px-10">
+                <div className="px-12 border-r border-line">
                     <span className="text-muted text-xs block mb-1">{'//contact'}</span>
                     <a href="mailto:giacobbealessio@gmail.com"
                         className="hover:text-accent transition-colors">
                         giacobbealessio@gmail.com
                     </a>
                 </div>
-                <div className="px-10">
+                <div className="px-12 border-r border-line">
                     <span className="text-muted text-xs block mb-1">{'//github'}</span>
                     <a href="https://github.com/AlessioGiacobbe" target="_blank" rel="noopener noreferrer"
                         className="hover:text-accent transition-colors">
                         github.com/AlessioGiacobbe
                     </a>
+                </div>
+                <div className="pl-12">
+                    <ThemeToggle />
                 </div>
             </nav>
 
