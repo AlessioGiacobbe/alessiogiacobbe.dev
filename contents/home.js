@@ -45,10 +45,34 @@ export const sectionsItems = [
   {
     name: "where_i_have_worked",
     items: [
-      { title: "Reset energia", since: "01/04/2025",                    role: "Lead Backend Developer", url: "https://resetenergia.it/",    details: [] },
-      { title: "onpage",        since: "01/09/2023", end: "01/04/2025", role: "Fullstack DevOps",        url: "https://onpage.it/",          details: [] },
-      { title: "finsa",         since: "01/01/2022", end: "01/09/2023", role: "Frontend Developer",      url: "https://finsa.it/it",         details: [] },
-      { title: "gaslini",       since: "09/01/2020", end: "01/01/2022", role: "Fullstack Developer",     url: "https://www.gaslini.org/",    details: [] },
+      {
+        title: "Reset energia", since: "01/05/2025", role: "Backend Developer", url: "https://resetenergia.it/",
+        details: [
+          "Designed and implemented the entire database architecture from the ground up, defining schemas, relationships, and indexing strategies to support scalability and high performance.",
+          "Developed and maintained RESTful APIs and backend services, ensuring reliable communication between application layers and external integrations.",
+        ]
+      },
+      {
+        title: "onpage", since: "01/09/2023", end: "01/05/2025", role: "Full Stack Developer", url: "https://onpage.it/",
+        details: [
+          "Full-stack development using Laravel, PostgreSQL, and Vue.js, handling millions of requests every week.",
+          "DevOps with Kubernetes and Docker, optimizing the CI/CD pipeline to achieve deployment times under one minute.",
+        ]
+      },
+      {
+        title: "finsa", since: "01/01/2022", end: "01/09/2023", role: "Full Stack Developer", url: "https://finsa.it/it",
+        details: [
+          "Backend development using Symfony framework, handling complex biomedical data.",
+          "Deployment using Docker on Kubernetes, dockerizing old codebases and orchestrating enterprise-level infrastructures.",
+        ]
+      },
+      {
+        title: "gaslini", since: "09/01/2020", end: "01/01/2022", role: "Full Stack Developer", url: "https://www.gaslini.org/",
+        details: [
+          "Developed full-stack web applications using the Laravel PHP framework to manage biomedical patient data.",
+          "Managed and optimized MariaDB databases, ensuring fast data retrieval while maintaining data anonymization.",
+        ]
+      },
     ]
   },
   {
