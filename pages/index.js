@@ -6,6 +6,7 @@ import ProjectsSection from '../components/ProjectsSection';
 import Footer from '../components/Footer';
 import ThemeToggle from '../components/ThemeToggle';
 import { FiGlobe, FiMail, FiGithub } from 'react-icons/fi';
+import Link from 'next/link';
 
 export default function Home() {
     const { t } = useTranslation('index');
@@ -16,9 +17,9 @@ export default function Home() {
             <nav className="animate-fade-in-up py-4 md:py-10 border-b border-line">
                 {/* Mobile: icon row */}
                 <div className="flex items-center gap-5 md:hidden">
-                    <a href="/" className="text-muted hover:text-accent transition-colors">
+                    <Link href="/" className="text-muted hover:text-accent transition-colors">
                         <FiGlobe size={18} />
-                    </a>
+                    </Link>
                     <a href="mailto:giacobbealessio@gmail.com" className="text-muted hover:text-accent transition-colors">
                         <FiMail size={18} />
                     </a>
