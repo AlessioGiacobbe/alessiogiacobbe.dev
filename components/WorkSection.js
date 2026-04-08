@@ -20,8 +20,8 @@ export default function WorkSection() {
                         ? moment(item.end, "DD/MM/YYYY").format("MMM YYYY").toLowerCase()
                         : 'present';
                     return (
-                        <div key={i} className="flex gap-8">
-                            <span className="text-muted text-sm w-48 flex-shrink-0 pt-0.5">
+                        <div key={i} className="flex flex-col sm:flex-row gap-1 sm:gap-8">
+                            <span className="text-muted text-sm sm:w-48 sm:flex-shrink-0 sm:pt-0.5">
                                 {since} - {end}
                             </span>
                             <div className="flex-1">
@@ -63,8 +63,8 @@ export default function WorkSection() {
                         {'//' + t('certifications').toLowerCase()}
                     </p>
                     {certs.items.map((item, i) => (
-                        <div key={i} className="flex gap-8">
-                            <span className="w-48 flex-shrink-0" />
+                        <div key={i} className="flex flex-col sm:flex-row gap-1 sm:gap-8">
+                            <span className="hidden sm:block sm:w-48 sm:flex-shrink-0" />
                             <div>
                                 <span className="border border-line px-2.5 py-1 text-sm">
                                     {item.title}

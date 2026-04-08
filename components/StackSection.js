@@ -11,7 +11,7 @@ export default function StackSection() {
             <p className="text-muted mb-4">
                 {'//' + t('things_i_work_with').toLowerCase()}
             </p>
-            <div className="flex flex-wrap justify-between gap-y-3">
+            <div className="flex flex-wrap gap-2">
                 {section.items.map((item, i) => (
                     <span
                         key={i}

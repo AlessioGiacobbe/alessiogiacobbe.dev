@@ -18,10 +18,10 @@ export default function Hero() {
                     />
                 </div>
                 <div>
-                    <h1 className="text-5xl font-bold tracking-tight mb-2">
+                    <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2">
                         &lt;Alessio Giacobbe&gt;
                     </h1>
-                    <p className="text-muted text-2xl">
+                    <p className="text-muted text-lg md:text-2xl">
                         {'//fullstack developer'}
                     </p>
                 </div>

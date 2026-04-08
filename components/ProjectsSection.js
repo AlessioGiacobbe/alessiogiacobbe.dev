@@ -11,7 +11,7 @@ export default function ProjectsSection() {
             <p className="text-muted mb-4">
                 {'//' + t('things_i_did').toLowerCase()}
             </p>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {section.items.map((item, i) => (
                     <div key={i} className="border border-line p-5">
                         <div className="flex items-start justify-between gap-2 mb-2">
