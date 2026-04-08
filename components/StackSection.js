@@ -21,7 +21,7 @@ export default function StackSection() {
                         {t(item.title)}
                     </span>
                 ))}
-            </div>
+            </div> 
         </div>
     );
 }
