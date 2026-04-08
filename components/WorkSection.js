@@ -38,9 +38,9 @@ export default function WorkSection() {
                                 {item.details && item.details.length > 0 && (
                                     <ul className="space-y-1.5">
                                         {item.details.map((detail, j) => (
-                                            <li key={j} className="flex gap-2 text-sm leading-relaxed">
-                                                <span className="text-muted mt-1.5 flex-shrink-0">&#9679;</span>
-                                                <span>{detail}</span>
+                                            <li key={j} className="flex items-center gap-2 text-sm leading-relaxed">
+                                                <span className="text-muted flex-shrink-0">&#9679;</span>
+                                                <span>{t(detail)}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -67,9 +67,9 @@ export default function WorkSection() {
                                     {item.details && item.details.length > 0 && (
                                         <ul className="space-y-2">
                                             {item.details.map((detail, j) => (
-                                                <li key={j} className="flex gap-3 text-sm leading-relaxed">
-                                                    <span className="text-muted mt-1.5 flex-shrink-0">&#9679;</span>
-                                                    <span>{detail}</span>
+                                                <li key={j} className="flex items-center gap-3 text-sm leading-relaxed">
+                                                    <span className="text-muted flex-shrink-0">&#9679;</span>
+                                                    <span>{t(detail)}</span>
                                                 </li>
                                             ))}
                                         </ul>

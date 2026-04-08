@@ -31,5 +31,13 @@
     "rust": "Rust",
     "next-js": "Next.js",
     "kubernetes": "Kubernetes",
-    "certifications": "Certifications"
+    "certifications": "Certifications",
+    "reset_detail_1": "Designed and implemented the entire database architecture from the ground up, defining schemas, relationships, and indexing strategies to support scalability and high performance.",
+    "reset_detail_2": "Developed and maintained RESTful APIs and backend services, ensuring reliable communication between application layers and external integrations.",
+    "onpage_detail_1": "Full-stack development using Laravel, PostgreSQL, and Vue.js, handling millions of requests every week.",
+    "onpage_detail_2": "DevOps with Kubernetes and Docker, optimizing the CI/CD pipeline to achieve deployment times under one minute.",
+    "finsa_detail_1": "Backend development using Symfony framework, handling complex biomedical data.",
+    "finsa_detail_2": "Deployment using Docker on Kubernetes, dockerizing old codebases and orchestrating enterprise-level infrastructures.",
+    "gaslini_detail_1": "Developed full-stack web applications using the Laravel PHP framework to manage biomedical patient data.",
+    "gaslini_detail_2": "Managed and optimized MariaDB databases, ensuring fast data retrieval while maintaining data anonymization."
 }

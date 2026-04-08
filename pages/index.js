@@ -28,7 +28,7 @@ export default function Home() {
                         <FiGithub size={18} />
                     </a>
                     <div className="ml-auto">
-                        <ThemeToggle />
+                        <ThemeToggle compact />
                     </div>
                 </div>
                 {/* Desktop: single row with dividers */}
