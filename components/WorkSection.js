@@ -6,7 +6,6 @@ import { FiArrowUpRight } from 'react-icons/fi';
 export default function WorkSection() {
     const { t } = useTranslation('index');
     const jobs = sectionsItems.find(s => s.name === 'where_i_have_worked');
-    const certs = sectionsItems.find(s => s.name === 'certifications');
 
     return (
         <div>
@@ -20,31 +19,26 @@ export default function WorkSection() {
                         ? moment(item.end, "DD/MM/YYYY").format("MMM YYYY").toLowerCase()
                         : 'present';
                     return (
-                        <div key={i} className="flex flex-col sm:flex-row gap-1 sm:gap-8">
-                            <span className="text-muted text-sm sm:w-48 sm:flex-shrink-0 sm:pt-0.5">
-                                {since} - {end}
-                            </span>
-                            <div className="flex-1">
-                                <div className="mb-3">
+                        <div key={i}>
+                            {/* Mobile layout */}
+                            <div className="sm:hidden mb-1">
+                                <div className="flex items-start justify-between gap-2 mb-1">
                                     {item.url ? (
                                         <a href={item.url} target="_blank" rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-1 border border-line px-2.5 py-1 text-sm hover:border-accent hover:text-accent transition-colors">
+                                            className="inline-flex items-center gap-1 font-medium hover:text-accent transition-colors">
                                             {t(item.title)}
                                             <FiArrowUpRight size={12} className="opacity-50" />
                                         </a>
                                     ) : (
-                                        <span className="border border-line px-2.5 py-1 text-sm">
-                                            {t(item.title)}
-                                        </span>
+                                        <span className="font-medium">{t(item.title)}</span>
                                     )}
-                                    <span className="text-muted text-sm ml-3">
-                                        {'//' + item.role.toLowerCase()}
-                                    </span>
+                                    <span className="text-muted text-xs flex-shrink-0">{since} — {end}</span>
                                 </div>
+                                <p className="text-muted text-xs mb-3">{item.role.toLowerCase()}</p>
                                 {item.details && item.details.length > 0 && (
-                                    <ul className="space-y-2 mt-3">
+                                    <ul className="space-y-1.5">
                                         {item.details.map((detail, j) => (
-                                            <li key={j} className="flex gap-3 text-sm leading-relaxed">
+                                            <li key={j} className="flex gap-2 text-sm leading-relaxed">
                                                 <span className="text-muted mt-1.5 flex-shrink-0">&#9679;</span>
                                                 <span>{detail}</span>
                                             </li>
@@ -52,31 +46,41 @@ export default function WorkSection() {
                                     </ul>
                                 )}
                             </div>
+                            {/* Desktop layout */}
+                            <div className="hidden sm:flex gap-8">
+                                <span className="text-muted text-sm w-48 flex-shrink-0 pt-0.5">
+                                    {since} — {end}
+                                </span>
+                                <div className="flex-1">
+                                    <div className="mb-1">
+                                        {item.url ? (
+                                            <a href={item.url} target="_blank" rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-1 font-medium hover:text-accent transition-colors">
+                                                {t(item.title)}
+                                                <FiArrowUpRight size={13} className="opacity-50" />
+                                            </a>
+                                        ) : (
+                                            <span className="font-medium">{t(item.title)}</span>
+                                        )}
+                                    </div>
+                                    <p className="text-muted text-sm mb-3">{item.role.toLowerCase()}</p>
+                                    {item.details && item.details.length > 0 && (
+                                        <ul className="space-y-2">
+                                            {item.details.map((detail, j) => (
+                                                <li key={j} className="flex gap-3 text-sm leading-relaxed">
+                                                    <span className="text-muted mt-1.5 flex-shrink-0">&#9679;</span>
+                                                    <span>{detail}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
+                            </div>
                         </div>
                     );
                 })}
             </div>
 
-            {certs && certs.items.length > 0 && (
-                <div className="mt-14">
-                    <p className="text-muted mb-4">
-                        {'//' + t('certifications').toLowerCase()}
-                    </p>
-                    {certs.items.map((item, i) => (
-                        <div key={i} className="flex flex-col sm:flex-row gap-1 sm:gap-8">
-                            <span className="hidden sm:block sm:w-48 sm:flex-shrink-0" />
-                            <div>
-                                <span className="border border-line px-2.5 py-1 text-sm">
-                                    {item.title}
-                                </span>
-                                <span className="text-muted text-sm ml-3">
-                                    {'//' + item.role.toLowerCase()}
-                                </span>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            )}
         </div>
     );
 }

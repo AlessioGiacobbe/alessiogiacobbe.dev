@@ -73,7 +73,20 @@ export default function Home() {
                 <ProjectsSection />
             </div>
 
-            <div className="animate-fade-in-up mt-14" style={{ animationDelay: '0.38s' }}>
+            <a
+                href="/Alessio Giacobbe CV.pdf"
+                download
+                className="animate-fade-in-up group flex items-center justify-between border border-line px-6 py-5 mt-14 hover:border-accent transition-colors"
+                style={{ animationDelay: '0.38s' }}
+            >
+                <div>
+                    <span className="text-muted text-xs block mb-1">{'//cv'}</span>
+                    <span className="font-medium group-hover:text-accent transition-colors">alessio_giacobbe_cv.pdf</span>
+                </div>
+                <span className="text-muted text-sm group-hover:text-accent transition-colors">download ↓</span>
+            </a>
+
+            <div className="animate-fade-in-up mt-6" style={{ animationDelay: '0.44s' }}>
                 <Footer />
             </div>
         </div>

@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
 
             <p className="text-muted mb-4">{'//about'}</p>
-            <p className="max-w-xl leading-relaxed">
+            <p className="leading-relaxed">
                 {t('hero_subtitle', { exp_years: new Date().getFullYear() - 2019 })}
             </p>
         </section>
