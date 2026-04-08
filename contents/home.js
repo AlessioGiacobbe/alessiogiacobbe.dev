@@ -46,7 +46,7 @@ export const sectionsItems = [
     name: "where_i_have_worked",
     items: [
       {
-        title: "Reset energia", since: "01/05/2025", role: "Backend Developer", url: "https://resetenergia.it/",
+        title: "Reset energia", since: "01/05/2025", role: "lead Backend Developer", url: "https://resetenergia.it/",
         details: [
           "reset_detail_1",
           "reset_detail_2",
