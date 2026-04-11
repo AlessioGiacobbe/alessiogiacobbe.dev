@@ -1,36 +1,30 @@
-import ReactIcon from "../assets/react.svg";
-import KubernetesIcon from "../assets/kubernetes.svg"
-import RustIcon from "../assets/rust.svg";
-import CpuIcon from "../assets/cpu.svg"
-import DockerIcon from "../assets/docker.svg"
-import LaravelIcon from "../assets/laravel.svg"
-import SymfonyIcon from "../assets/symfony.svg"
-import NextIcon from "../assets/nextjs.svg"
-import IsaacIcon from "../assets/isaac.svg"
-import { GitHub, ArrowUpRight, Mail, Twitter, FileText } from 'react-feather';
+import {
+    SiReact, SiTypescript, SiTailwindcss, SiLaravel, SiDocker,
+    SiPostgresql, SiRedis, SiRust, SiNextdotjs, SiKubernetes,
+} from 'react-icons/si';
+import { FiMail, FiFileText, FiTwitter, FiGithub, FiArrowUpRight } from 'react-icons/fi';
 
 const icons = {
-    react: ReactIcon,
-    rust: RustIcon,
-    next: NextIcon,
-    kubernetes: KubernetesIcon,
-    cpu: CpuIcon,
-    docker: DockerIcon,
-    laravel: LaravelIcon,
-    symfony: SymfonyIcon,
-    isaac: IsaacIcon,
-    github: GitHub,
-    arrowUpRight: ArrowUpRight,
-    mail: Mail,
-    twitter: Twitter,
-    document: FileText
+    react:       SiReact,
+    typescript:  SiTypescript,
+    tailwind:    SiTailwindcss,
+    laravel:     SiLaravel,
+    docker:      SiDocker,
+    postgresql:  SiPostgresql,
+    redis:       SiRedis,
+    rust:        SiRust,
+    next:        SiNextdotjs,
+    kubernetes:  SiKubernetes,
+    github:      FiGithub,
+    arrowUpRight: FiArrowUpRight,
+    mail:        FiMail,
+    twitter:     FiTwitter,
+    document:    FiFileText,
 };
 
-function TopicIcon({ iconName = "react", customStyles = "scale-60" }) {
-    const SelectedIcon = icons[iconName];
-    return <>
-        {SelectedIcon && <SelectedIcon className={customStyles} />}
-    </>
+function TopicIcon({ iconName, size = 20, className = "" }) {
+    const Icon = icons[iconName];
+    return Icon ? <Icon size={size} className={className} /> : null;
 }
 
 export default TopicIcon
