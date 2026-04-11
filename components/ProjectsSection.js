@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import { sectionsItems } from '../contents/home';
 import TopicIcon from './TopicIcon';
@@ -5,6 +6,11 @@ import TopicIcon from './TopicIcon';
 export default function ProjectsSection() {
     const { t } = useTranslation('index');
     const section = sectionsItems.find(s => s.name === 'things_i_did');
+    const [items, setItems] = useState(section.items);
+
+    useEffect(() => {
+        setItems([...section.items].sort(() => Math.random() - 0.5));
+    }, []);
 
     return (
         <div>
@@ -12,7 +18,7 @@ export default function ProjectsSection() {
                 {'//' + t('things_i_did').toLowerCase()}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {section.items.map((item, i) => (
+                {items.map((item, i) => (
                     <div key={i} className="border border-line p-5">
                         <div className="flex items-start justify-between gap-2 mb-2">
                             <span className="font-bold">{t(item.title)}</span>

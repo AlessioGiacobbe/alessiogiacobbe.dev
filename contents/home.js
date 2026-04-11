@@ -2,14 +2,14 @@ export const sectionsItems = [
   {
     name: "things_i_work_with",
     items: [
+      { title: "laravel",    iconName: "laravel",    since: "09/01/2020" },
+      { title: "postgresql", iconName: "postgresql", since: "01/01/2021" },
+      { title: "rust",       iconName: "rust",       since: "01/10/2022" },
       { title: "react",      iconName: "react",      since: "06/01/2020" },
       { title: "typescript", iconName: "typescript", since: "06/01/2020" },
       { title: "tailwind",   iconName: "tailwind",   since: "01/01/2021" },
-      { title: "laravel",    iconName: "laravel",    since: "09/01/2020" },
       { title: "docker",     iconName: "docker",     since: "01/01/2022" },
-      { title: "postgresql", iconName: "postgresql", since: "01/01/2021" },
       { title: "redis",      iconName: "redis",      since: "01/06/2022" },
-      { title: "rust",       iconName: "rust",       since: "01/10/2022" },
       { title: "next-js",    iconName: "next",       since: "04/01/2022" },
       { title: "kubernetes", iconName: "kubernetes", since: "01/01/2022" },
     ]

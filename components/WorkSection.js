@@ -25,7 +25,7 @@ export default function WorkSection() {
                                 <div className="flex items-start justify-between gap-2 mb-1">
                                     {item.url ? (
                                         <a href={item.url} target="_blank" rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-1 font-medium hover:text-accent transition-colors">
+                                            className="inline-flex items-start gap-1 font-medium hover:text-accent transition-colors">
                                             {t(item.title)}
                                             <FiArrowUpRight size={12} className="opacity-50" />
                                         </a>
@@ -38,7 +38,7 @@ export default function WorkSection() {
                                 {item.details && item.details.length > 0 && (
                                     <ul className="space-y-1.5">
                                         {item.details.map((detail, j) => (
-                                            <li key={j} className="flex items-center gap-2 text-sm leading-relaxed">
+                                            <li key={j} className="flex items-start gap-2 text-sm leading-relaxed">
                                                 <span className="text-muted flex-shrink-0">&#9679;</span>
                                                 <span>{t(detail)}</span>
                                             </li>
@@ -55,7 +55,7 @@ export default function WorkSection() {
                                     <div className="mb-1">
                                         {item.url ? (
                                             <a href={item.url} target="_blank" rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-1 font-medium hover:text-accent transition-colors">
+                                                className="inline-flex items-start gap-1 font-medium hover:text-accent transition-colors">
                                                 {t(item.title)}
                                                 <FiArrowUpRight size={13} className="opacity-50" />
                                             </a>
@@ -67,7 +67,7 @@ export default function WorkSection() {
                                     {item.details && item.details.length > 0 && (
                                         <ul className="space-y-2">
                                             {item.details.map((detail, j) => (
-                                                <li key={j} className="flex items-center gap-3 text-sm leading-relaxed">
+                                                <li key={j} className="flex items-start gap-3 text-sm leading-relaxed">
                                                     <span className="text-muted flex-shrink-0">&#9679;</span>
                                                     <span>{t(detail)}</span>
                                                 </li>

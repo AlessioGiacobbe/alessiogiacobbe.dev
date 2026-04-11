@@ -15,9 +15,9 @@ export default function StackSection() {
                 {section.items.map((item, i) => (
                     <span
                         key={i}
-                        className="inline-flex items-center gap-1.5 border border-line px-2.5 py-1 text-sm hover:border-accent hover:text-accent transition-colors cursor-default"
+                        className="inline-flex items-center gap-2 border border-line px-4 py-2 text-base hover:border-accent hover:text-accent transition-colors cursor-default"
                     >
-                        <TopicIcon iconName={item.iconName} size={13} />
+                        <TopicIcon iconName={item.iconName} size={16} />
                         {t(item.title)}
                     </span>
                 ))}
