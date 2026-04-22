@@ -13,6 +13,7 @@ module.exports = {
         ink:     "var(--color-ink)",
         muted:   "var(--color-muted)",
         accent:  "var(--color-accent)",
+        'accent-soft': "var(--color-accent-soft)",
       },
       animation: {
         'fade-in-up': 'fadeInUp 0.5s ease-out both',

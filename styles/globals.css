@@ -10,6 +10,7 @@
   --color-ink:      #1A1A1A;
   --color-muted:    #777777;
   --color-accent:   hsl(var(--hue), 40%, 50%);
+  --color-accent-soft: hsl(var(--hue), 30%, 70%);
 }
 
 [data-theme="dark"] {
@@ -19,6 +20,7 @@
   --color-ink:      #E2E2E2;
   --color-muted:    #686868;
   --color-accent:   hsl(var(--hue), 40%, 62%);
+  --color-accent-soft: hsl(var(--hue), 25%, 45%);
 }
 
 html,
