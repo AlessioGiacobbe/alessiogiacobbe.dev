@@ -1,6 +1,7 @@
 import {
     SiReact, SiTypescript, SiTailwindcss, SiLaravel, SiDocker,
     SiPostgresql, SiRedis, SiRust, SiNextdotjs, SiKubernetes,
+    SiGoogleplay, SiAppstore,
 } from 'react-icons/si';
 import { FiMail, FiFileText, FiTwitter, FiGithub, FiArrowUpRight } from 'react-icons/fi';
 
@@ -20,6 +21,8 @@ const icons = {
     mail:        FiMail,
     twitter:     FiTwitter,
     document:    FiFileText,
+    googlePlay:  SiGoogleplay,
+    appStore:    SiAppstore,
 };
 
 function TopicIcon({ iconName, size = 20, className = "" }) {

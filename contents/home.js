@@ -18,6 +18,19 @@ export const sectionsItems = [
     name: "things_i_did",
     items: [
       {
+        title: "formarsi_bene",
+        description: "formarsi_bene_descr",
+        links: [
+          { icon: "googlePlay", link: "https://play.google.com/store/apps/details?id=com.benesrl.formarsibene" },
+          { icon: "appStore",   link: "https://apps.apple.com/us/app/formarsi-bene/id6742651719" }
+        ]
+      },
+      {
+        title: "noo",
+        description: "noo_descr",
+        links: [{ icon: "github", link: "https://git.home.boffa.me/noo/noo" }]
+      },
+      {
         title: "ruve",
         description: "ruve_descr",
         links: [{ icon: "github", link: "https://github.com/AlessioGiacobbe/RuVe" }]
