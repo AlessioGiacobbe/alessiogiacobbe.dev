@@ -28,7 +28,7 @@ export const sectionsItems = [
       {
         title: "noo",
         description: "noo_descr",
-        links: [{ icon: "github", link: "https://git.home.boffa.me/noo/noo" }]
+        links: [{ icon: "arrowUpRight", link: "https://noo.eu/" }]
       },
       {
         title: "ruve",
