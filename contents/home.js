@@ -31,6 +31,11 @@ export const sectionsItems = [
         links: [{ icon: "arrowUpRight", link: "https://noo.eu/" }]
       },
       {
+        title: "typephp",
+        description: "typephp_descr",
+        links: [{ icon: "github", link: "https://github.com/swoole/typephp/releases" }]
+      },
+      {
         title: "ruve",
         description: "ruve_descr",
         links: [{ icon: "github", link: "https://github.com/AlessioGiacobbe/RuVe" }]

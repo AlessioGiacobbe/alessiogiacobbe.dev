@@ -24,6 +24,8 @@
     "formarsi_bene_descr": "App mobile React Native con backend Laravel per consultare corsi professionali e firmarli digitalmente",
     "noo": "noo",
     "noo_descr": "Suite TypeScript di servizi digitali essenziali a sovranità europea, privacy-focused e GDPR-native",
+    "typephp": "TypePHP",
+    "typephp_descr": "Compilatore AOT nativo per PHP, scritto interamente in PHP, che traduce codice PHP in C++ e binari nativi",
     "contacts_get_in_touch": "Contatti",
     "react": "React",
     "typescript": "TypeScript",
