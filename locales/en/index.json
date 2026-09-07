@@ -25,7 +25,7 @@
     "noo": "noo",
     "noo_descr": "TypeScript suite of essential digital services under European sovereignty, privacy-focused and GDPR-native",
     "typephp": "TypePHP",
-    "typephp_descr": "Native AOT compiler for PHP, written entirely in PHP, that turns PHP code into C++ and native binaries",
+    "typephp_descr": "Self-hosting AOT compiler that compiles PHP to native machine code via C++, up to ~8× faster than standard PHP",
     "contacts_get_in_touch": "Get in touch!",
     "react": "React",
     "typescript": "TypeScript",

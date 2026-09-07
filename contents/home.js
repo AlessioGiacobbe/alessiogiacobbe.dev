@@ -33,7 +33,7 @@ export const sectionsItems = [
       {
         title: "typephp",
         description: "typephp_descr",
-        links: [{ icon: "github", link: "https://github.com/swoole/typephp/releases" }]
+        links: [{ icon: "github", link: "https://github.com/swoole/typephp" }]
       },
       {
         title: "ruve",
