@@ -1,36 +1,33 @@
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 
-export default function Hero() {
+export default function Hero({ email, cv }) {
     const { t } = useTranslation('index');
 
     return (
-        <section className="pt-20 pb-14">
-            <div className="flex items-center gap-8 mb-16">
-                <div className="flex-shrink-0">
+        <div className="settle flex flex-col items-start lg:justify-between lg:self-stretch">
+            <div>
+                <h1>&lt;Alessio Giacobbe&gt;</h1>
+                <div className="mt-6 flex items-center gap-4">
                     <Image
                         src="/avatar.jpg"
-                        alt="Alessio Giacobbe"
-                        width={100}
-                        height={100}
-                        className="rounded-full"
+                        alt=""
+                        width={48}
+                        height={48}
+                        priority
+                        className="flex-shrink-0 rounded-full"
                         style={{ objectFit: 'cover' }}
                     />
+                    <p className="lead text-ink-2">{'//fullstack developer'}</p>
                 </div>
-                <div>
-                    <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2">
-                        &lt;Alessio Giacobbe&gt;
-                    </h1>
-                    <p className="text-muted text-lg md:text-2xl">
-                        {'//fullstack developer'}
-                    </p>
-                </div>
+                <p className="mt-6 max-w-[48ch]">
+                    {t('hero_subtitle', { exp_years: new Date().getFullYear() - 2019 })}
+                </p>
             </div>
-
-            <p className="text-muted mb-4">{'//about'}</p>
-            <p className="leading-relaxed">
-                {t('hero_subtitle', { exp_years: new Date().getFullYear() - 2019 })}
-            </p>
-        </section>
+            <div className="mt-10 flex flex-wrap gap-3">
+                <a href={`mailto:${email}`} className="btn">email me</a>
+                <a href={cv} download className="btn btn--quiet">download cv</a>
+            </div>
+        </div>
     );
 }

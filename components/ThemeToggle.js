@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
-export default function ThemeToggle({ compact = false }) {
+export default function ThemeToggle() {
     const [dark, setDark] = useState(false);
 
     useEffect(() => {
@@ -20,25 +20,15 @@ export default function ThemeToggle({ compact = false }) {
         localStorage.setItem('theme', next ? 'dark' : 'light');
     }
 
-    if (compact) {
-        return (
-            <button
-                onClick={toggle}
-                className="text-muted hover:text-ink transition-colors cursor-pointer bg-transparent border-none p-0"
-            >
-                {dark ? <FiSun size={18} /> : <FiMoon size={18} />}
-            </button>
-        );
-    }
-
     return (
         <button
+            type="button"
             onClick={toggle}
-            className="text-muted hover:text-ink transition-colors cursor-pointer bg-transparent border-none p-0 text-left"
-            style={{ fontFamily: 'inherit', fontSize: 'inherit' }}
+            aria-label={dark ? 'light theme' : 'dark theme'}
+            className="link inline-flex min-h-11 cursor-pointer items-center gap-2 border-none bg-transparent p-0"
         >
-            <span className="text-muted text-xs block mb-1">{'//theme'}</span>
-            <span>{dark ? 'light' : 'dark'}</span>
+            {dark ? <FiSun size={16} /> : <FiMoon size={16} />}
+            <span className="hidden md:inline">{dark ? 'light' : 'dark'}</span>
         </button>
     );
 }
