@@ -1,83 +1,90 @@
+/* Hallmark · shape: Index-First (draw e65e63 dealt Narrative Workflow; the material is three lists, not a process) · genre: editorial · theme: brand · redesign: full · job: hire
+ * paper: oklch(93.5% 0.006 255) · accent: oklch(52% 0.13 258) · display: IBM Plex Mono · body: IBM Plex Mono · hero: Index · nav: edge-aligned · footer: colophon · signature: the name as an open tag beside the index of what he builds
+ * axes: light/mono/cool · posture: Restrained · contrast: pass · fold: pass · draw: e65e63 · imagery: none, the owner's avatar only · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V4 · weakest: P, a CV page argues little on its own; the low-level projects lead in the hero so the work makes the case */
+/* Hallmark · hero-review: fix · 4 findings · 4 resolved */
+/* Hallmark · finish-review: subagent · 3 findings · 3 resolved · gap: below the fold the idea rests on the // heads alone */
+/* Hallmark · waive 77 · one band, the email at section size and two links, once a page · the hire close is the address itself, set large where a reader copies it */
+/* Hallmark · reworded "may 2025 — present" to "may 2025 to present" · 19 names the dash */
 @tailwind base;
-@tailwind utilities;
 @tailwind components;
+@tailwind utilities;
 
 :root {
-  --hue: 220;
-  --color-bg:      #EBEBEB;
-  --color-surface:  #E2E2E2;
-  --color-line:     #CCCCCC;
-  --color-ink:      #1A1A1A;
-  --color-muted:    #777777;
-  --color-accent:   hsl(var(--hue), 40%, 50%);
-  --color-accent-soft: hsl(var(--hue), 30%, 70%);
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
+  --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
+  --color-paper: oklch(93.5% 0.006 255); --color-paper-2: oklch(90.5% 0.007 255); --color-paper-3: oklch(87% 0.008 255);
+  --color-ink: oklch(22% 0.01 255); --color-ink-2: oklch(36% 0.012 255); --color-muted: oklch(47% 0.012 255);
+  --color-rule: oklch(82.5% 0.008 255);
+  --color-accent: oklch(52% 0.13 258); --color-accent-ink: oklch(97% 0.01 258); --color-focus: oklch(52% 0.19 258);
+  --font-display: var(--font-plex), ui-monospace, "SF Mono", Menlo, Consolas, monospace; --font-body: var(--font-display); --font-outlier: var(--font-body);
+  --radius-card: 0; --radius-pill: 999px; --rule-hair: 1px; --shadow-card: none;
+  --tracking-display: -0.035em; --display-weight: 600;
 }
 
-[data-theme="dark"] {
-  --color-bg:      #191919;
-  --color-surface:  #212121;
-  --color-line:     #2E2E2E;
-  --color-ink:      #E2E2E2;
-  --color-muted:    #686868;
-  --color-accent:   hsl(var(--hue), 40%, 62%);
-  --color-accent-soft: hsl(var(--hue), 25%, 45%);
-}
+@media (max-width: 60rem) { :root { --gutter: 24px; --section-gap-s: 80px; --section-gap: 96px; --section-gap-l: 120px; } }
+@media (max-width: 40rem) { :root { --gutter: 16px; --section-gap-s: 56px; --section-gap: 72px; --section-gap-l: 96px; --gap-columns: 16px; } }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  background-color: var(--color-bg);
-  min-height: 100vh;
-  color: var(--color-ink);
-  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
-  font-size: 14px;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-::selection {
-  background: var(--color-accent);
-  color: white;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--color-line);
-  border-radius: 3px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/* ThemeToggle writes data-theme="dark" or ""; before it runs, the system preference decides */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme=""]) {
+    --color-paper: oklch(21% 0.008 255); --color-paper-2: oklch(24% 0.009 255); --color-paper-3: oklch(27.5% 0.01 255);
+    --color-ink: oklch(90% 0.008 255); --color-ink-2: oklch(78% 0.01 255); --color-muted: oklch(66% 0.012 255);
+    --color-rule: oklch(31% 0.01 255);
+    --color-accent: oklch(72% 0.12 258); --color-accent-ink: oklch(20% 0.02 258); --color-focus: oklch(72% 0.18 258);
   }
 }
+:root[data-theme="dark"] {
+  --color-paper: oklch(21% 0.008 255); --color-paper-2: oklch(24% 0.009 255); --color-paper-3: oklch(27.5% 0.01 255);
+  --color-ink: oklch(90% 0.008 255); --color-ink-2: oklch(78% 0.01 255); --color-muted: oklch(66% 0.012 255);
+  --color-rule: oklch(31% 0.01 255);
+  --color-accent: oklch(72% 0.12 258); --color-accent-ink: oklch(20% 0.02 258); --color-focus: oklch(72% 0.18 258);
+}
 
-@keyframes floatDust {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25%      { transform: translate(-2px, -3px) scale(1.01); }
-  50%      { transform: translate(1px, -5px) scale(0.99); }
-  75%      { transform: translate(2px, -1px) scale(1.005); }
+/* base.css from the scaffold, in Tailwind's base layer so it lands after Preflight and under the utilities */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { overflow-x: clip; }
+  html { scrollbar-color: var(--color-muted) var(--color-paper); scroll-padding-top: var(--space-3xl); }
+  body { margin: 0; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); font-size: var(--text-md); line-height: 1.6; -webkit-font-smoothing: antialiased; caret-color: var(--color-accent); }
+  ::selection { background: color-mix(in oklab, var(--color-accent) 22%, transparent); color: var(--color-ink); }
+  :focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+  a { color: inherit; text-decoration: none; text-decoration-thickness: 1px; text-underline-offset: 0.16em; }
+  h1, h2, h3 { margin: 0; font-family: var(--font-display); font-weight: var(--display-weight, 700); font-synthesis: none; letter-spacing: var(--tracking-display); line-height: 1.05; overflow-wrap: break-word; min-width: 0; text-wrap: balance; }
+  h1 { max-width: 20ch; font-size: var(--text-display); } h2 { max-width: 30ch; font-size: var(--text-section); } h3 { max-width: 40ch; font-size: var(--text-title); line-height: 1.2; letter-spacing: -0.02em; }
+  .lead { font-size: var(--text-lead); line-height: 1.45; max-width: 52ch; }
+  p { margin: 0; text-wrap: pretty; }
+  p:not([class]) { max-width: 65ch; }
+  img, video { max-width: 100%; height: auto; display: block; }
+  svg { display: block; }
+  [hidden] { display: none !important; }
+  button, input, select, textarea { font: inherit; }
+  .container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); box-sizing: border-box; }
+  .num, .figure, td.num { font-variant-numeric: tabular-nums; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  @media (prefers-reduced-motion: reduce) { *:not(.keep-motion), *:not(.keep-motion)::before, *:not(.keep-motion)::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+}
+
+@layer components {
+  .btn { display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 48px; padding: 0 var(--space-lg); border: 1px solid var(--color-accent); border-radius: var(--radius-card); background: var(--color-accent); color: var(--color-accent-ink); font-size: var(--text-md); line-height: 1; white-space: nowrap; cursor: pointer; transition: background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out); }
+  .btn:hover { background: color-mix(in oklab, var(--color-accent) 82%, var(--color-ink)); border-color: color-mix(in oklab, var(--color-accent) 82%, var(--color-ink)); }
+  .btn:active { transform: translateY(1px); }
+  .btn--quiet { background: transparent; color: var(--color-ink); border-color: var(--color-rule); }
+  .btn--quiet:hover { background: var(--color-paper-2); border-color: var(--color-muted); }
+  .link { color: var(--color-ink-2); transition: color var(--dur-short) var(--ease-out); }
+  .link:hover { color: var(--color-accent); }
+  .link:active { color: var(--color-ink); }
+  .settle { animation: settle 560ms var(--ease-out) both; animation-delay: calc(var(--i, 0) * 80ms); }
+}
+
+@keyframes settle {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
 }

@@ -7,21 +7,18 @@ export default function StackSection() {
     const section = sectionsItems.find(s => s.name === 'things_i_work_with');
 
     return (
-        <div>
-            <p className="text-muted mb-4">
-                {'//' + t('things_i_work_with').toLowerCase()}
-            </p>
-            <div className="flex flex-wrap gap-2">
-                {section.items.map((item, i) => (
-                    <span
-                        key={i}
-                        className="inline-flex items-center gap-2 border border-line px-4 py-2 text-base hover:border-accent hover:text-accent transition-colors cursor-default"
-                    >
-                        <TopicIcon iconName={item.iconName} size={16} />
-                        {t(item.title)}
-                    </span>
-                ))}
-            </div> 
-        </div>
+        <section className="pt-[var(--section-gap-l)]">
+            <div className="container">
+                <h2>{'//' + t('things_i_work_with').toLowerCase()}</h2>
+                <ul className="mt-16 grid grid-cols-2 gap-x-[var(--gap-columns)] lg:grid-cols-5">
+                    {section.items.map(item => (
+                        <li key={item.title} className="flex items-center gap-3 whitespace-nowrap border-t border-rule py-8 font-semibold xl:text-xl">
+                            <TopicIcon iconName={item.iconName} size={24} className="flex-shrink-0 text-muted" />
+                            {t(item.title)}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </section>
     );
 }
